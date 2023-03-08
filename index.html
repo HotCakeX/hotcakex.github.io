@@ -7,14 +7,16 @@
 
 
 	<meta name="title" content="Harden Windows Security">
-	<meta name="description" content="Harden Windows safely, securely using Official Supported methods with proper explanation Always up-to-date and works with the latest build of Windows">
-	<meta name="keywords" content="Harden,Windows,Security,insider,Bitlocker,PowerShell,Microsoft,Defender,Microsoft defender,Firewall,WDAC,Windows Defender Application Guard">
+	<meta name="description"
+		content="Harden Windows safely, securely using Official Supported methods with proper explanation Always up-to-date and works with the latest build of Windows">
+	<meta name="keywords"
+		content="Harden,Windows,Security,insider,Bitlocker,PowerShell,Microsoft,Defender,Microsoft defender,Firewall,WDAC,Windows Defender Application Guard">
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="language" content="English">
 	<meta name="revisit-after" content="10 days">
 	<meta name="author" content="HotCakeX">
-	<meta name="msvalidate.01" content="F4AA0620E92793DDB761CA2790ABD6B2" />	
+	<meta name="msvalidate.01" content="F4AA0620E92793DDB761CA2790ABD6B2" />
 
 
 
@@ -35,12 +37,12 @@
 
 
 
-<!-- Microsoft Clarity -->
+	<!-- Microsoft Clarity -->
 	<script type="text/javascript">
-		(function(c,l,a,r,i,t,y){
-			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-			t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
 		})(window, document, "clarity", "script", "g5feclo26a");
 	</script>
 
@@ -92,28 +94,36 @@
 
 
 
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Microsoft-Security-Baselines">Microsoft
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass"
+							href="#Microsoft-Security-Baselines">Microsoft
 							Security Baselines</a></li>
 					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Microsoft-Defender">Microsoft
 							Defender</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Attack-surface-reduction-rules">Attack
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass"
+							href="#Attack-surface-reduction-rules">Attack
 							surface reduction rules</a></li>
 					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Bitlocker-Settings">Bitlocker
 							Settings</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#TLS-Security">TLS Security</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Lock-Screen">Lock Screen</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#User-Account-Control">UAC (User Account
-							Control)</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Device-Guard">Device Guard</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Windows-Firewall">Windows Firewall</a>
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#TLS-Security">TLS Security</a>
 					</li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Optional-Windows-Features">Optional
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Lock-Screen">Lock Screen</a></li>
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#User-Account-Control">UAC (User
+							Account
+							Control)</a></li>
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Device-Guard">Device Guard</a>
+					</li>
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Windows-Firewall">Windows
+							Firewall</a>
+					</li>
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass"
+							href="#Optional-Windows-Features">Optional
 							Windows Features</a></li>
 					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Windows-Networking">Windows
 							Networking</a></li>
 					<li class="nav-item"><a class="cia-tolink scrolls-smartass"
 							href="#Miscellaneous-Configurations">Miscellaneous Configurations</a></li>
-					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#Windows-Update-configurations">Windows
+					<li class="nav-item"><a class="cia-tolink scrolls-smartass"
+							href="#Windows-Update-configurations">Windows
 							Update configurations</a></li>
 					<li class="nav-item"><a class="cia-tolink scrolls-smartass" href="#edge-browser-configurations">Edge
 							Browser configurations</a></li>
@@ -125,13 +135,15 @@
 							Commands</a></li>
 
 
-					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass" href="#related"><img
+					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass"
+							href="#related"><img
 								src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Related.png">Related</a>
 					</li>
 					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass" href="#Trust"><img
 								src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Trust.png">Trust</a>
 					</li>
-					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass" href="#Support"><img
+					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass"
+							href="#Support"><img
 								src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Support.png">Support</a>
 					</li>
 					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass"
@@ -139,10 +151,12 @@
 								src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/SecurityRecommendation.png">Security
 							Recommendations</a>
 					</li>
-					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass" href="#Resources"><img
+					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass"
+							href="#Resources"><img
 								src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Resources.png">Resources</a>
 					</li>
-					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass" href="#License"><img
+					<li class="nav-item section-title booba-3"><a class="cia-tolink scrolls-smartass"
+							href="#License"><img
 								src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/LicenseFree.png">License</a>
 					</li>
 
@@ -781,12 +795,12 @@
 							</li>
 						</ul>
 
-						# Add multiple programs to the exclusion list of Controlled Folder Access
+						<span class="hljs-string"># Add multiple programs to the exclusion list of Controlled Folder Access</span>
 						<br>
 						<span class="hljs-string">Set-MpPreference -ControlledFolderAccessAllowedApplications
 							'C:\Program Files\App\app.exe','C:\Program Files\App2\app2.exe'</span>
 						<br>
-						# Get the list of all allowed apps
+						<span class="hljs-string"># Get the list of all allowed apps</span>
 						<br>
 						<span class="hljs-string">$(get-MpPreference).ControlledFolderAccessAllowedApplications</span>
 
@@ -1157,17 +1171,18 @@
 								<p>🔶 Disables the following <a class="theme-link"
 										href="https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices">weak
 										cipher suites</a> that are <strong>only available for backward
-										compatibility</strong>: <span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_256_GCM_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_128_GCM_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_256_CBC_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_128_CBC_SHA256&quot;</span></p>
+										compatibility</p></strong>
+										<p><span class="hljs-string">
+											&quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;</span>,<span
+									class="hljs-string">&quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;</span>,<span
+									class="hljs-string">&quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;</span><br>,<span
+									class="hljs-string">&quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;</span>,<span
+									class="hljs-string">&quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;</span>,<span
+									class="hljs-string">&quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;</span><br>,<span
+									class="hljs-string">&quot;TLS_PSK_WITH_AES_256_GCM_SHA384&quot;</span>,<span
+									class="hljs-string">&quot;TLS_PSK_WITH_AES_128_GCM_SHA256&quot;</span><br>,<span
+									class="hljs-string">&quot;TLS_PSK_WITH_AES_256_CBC_SHA384&quot;</span>,<span
+									class="hljs-string">&quot;TLS_PSK_WITH_AES_128_CBC_SHA256&quot;</span></p>
 							</li>
 							<li>
 								<p>🔶 Disables the following <a class="theme-link"
