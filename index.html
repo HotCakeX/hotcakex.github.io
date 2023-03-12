@@ -849,10 +849,8 @@
 												Defender Application Control policy (WDAC)</a>, <strong>more
 												info</strong> <a class="theme-link"
 												href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Introduction"><strong>in
-													the Wiki</strong></a>. You can see its status in <a
-												class="theme-link"
-												href="https://support.microsoft.com/en-us/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00"><span
-													class="hljs-string">System Information </span></a>and enable it
+													the Wiki</strong></a>. You can see its status in <a	class="theme-link" href="https://support.microsoft.com/en-us/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00">
+														System Information </a>and enable it
 											manually from Microsoft Defender app's GUI. It is very important for Windows
 											and Windows Defender intelligence updates to be always up-to-date in order
 											for Smart App Control to work properly as it relies on live intelligence and
@@ -922,15 +920,7 @@
 							</li>
 						</ul>
 
-						<span class="hljs-string"># Add multiple programs to the exclusion list of Controlled Folder
-							Access</span>
-						<br>
-						<span class="hljs-string">Set-MpPreference -ControlledFolderAccessAllowedApplications
-							'C:\Program Files\App\app.exe','C:\Program Files\App2\app2.exe'</span>
-						<br>
-						<span class="hljs-string"># Get the list of all allowed apps</span>
-						<br>
-						<span class="hljs-string">$(get-MpPreference).ControlledFolderAccessAllowedApplications</span>
+						<script src="https://gist.github.com/HotCakeX/5073c5b06bad08efa7fb8059bcc606e2.js"></script>
 
 						<br>
 						<ul>
@@ -944,8 +934,8 @@
 										command below or in the Program Settings section of Exploit Protection in
 										Microsoft Defender app.
 										<ul>
-											<li><span class="hljs-string">Set-ProcessMitigation -Name
-													&quot;C:\TrustedApp.exe&quot; -Disable ForceRelocateImages</span>
+											<li><span class="hljs-string"><b>Set-ProcessMitigation -Name
+													&quot;C:\TrustedApp.exe&quot; -Disable ForceRelocateImages</b></span>
 											</li>
 										</ul>
 									</li>
