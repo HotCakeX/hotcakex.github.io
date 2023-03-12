@@ -424,6 +424,7 @@
 									text</a>, nothing hidden, no 3rd party executable or pre-compiled binary is
 								involved.
 								<ul>
+									<br>
 									<li> <img
 											src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/red-alert.gif"
 											width="25" alt="Important notice"> <strong>For your own security</strong>,
@@ -502,6 +503,46 @@
 						<ul>
 							<li>Doesn't remove or disable Windows functionalities against Microsoft's recommendation.
 							</li>
+
+							<li>
+
+								The script primarily uses Group policies, <strong>the Microsoft recommended way of
+									configuring Windows</strong>. It also uses PowerShell cmdlets where Group Policies
+								aren't
+								available, and finally uses <a class="theme-link"
+									href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Payload/Registry.csv">a
+									few registry
+									keys</a>
+								to configure security measures that can neither be configured using Group Policies nor
+								PowerShell cmdlets. This is why the script doesn't break anything or cause unwanted
+								behavior.
+
+
+
+								<ul>
+									<br>
+									<li>
+
+										<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/red-alert.gif"
+											width="25" alt="Important notice"> Any other 3rd party tool/program/script
+										that
+										claims to modify Windows or harden it, if they don't strictly adhere to the
+										official
+										rules above, they can damage your system, cause unknown problems and bugs. <a
+											class="theme-link"
+											href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Group-Policy#how-are-group-policies-for-this-script-created-and-maintained">How
+											are
+											Group Policies for this script created and
+											maintained?</a>
+
+									</li>
+								</ul>
+
+
+							</li>
+
+
+
 							<li>This Readme page is used as the reference for all of the security measures applied by
 								this script and Group Policies.</li>
 							<li>When a hardening measure is no longer necessary because it's applied by default by
@@ -510,12 +551,13 @@
 							<li>The script can be run infinite number of times, it's made in a way that it won't make
 								any duplicate changes at all.</li>
 							<li>The script asks for confirmation, in the PowerShell console, before running each
-								hardening category, so you can selectively run (or don't run) each of them.</li>
+								hardening category and some sub-categories, so you can selectively run (or don't run)
+								each of them.</li>
 							<li>Applying this script makes your PC compliant with Microsoft Security Baselines and
 								Secured-core PC specifications (providing that you use modern hardware that supports the
-								latest Windows security features). - <a class="theme-link"
+								latest Windows security features) - <a class="theme-link"
 									href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure#what-makes-a-secured-core-pc">See
-									what makes a Secured-core PC</a>. <a class="theme-link" href="#Device-Guard">Check
+									what makes a Secured-core PC</a> - <a class="theme-link" href="#Device-Guard">Check
 									Device Guard
 									category for more details.</a>
 								<ul>
@@ -533,6 +575,11 @@
 								<span class="hljs-string"><b>Control + F</b></span> and search for <span
 									class="hljs-string"><b>#TopSecurity</b></span> on this page to find
 								those security measures.
+							</li>
+							<li>
+								Since I originally created this repository for myself and people I care about, I always
+								maintain it to the highest possible standard.
+
 							</li>
 						</ul>
 
@@ -2358,29 +2405,28 @@
 									src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Trust.png"
 									alt="TrustIcon"></a></h2>
 						<h3>How can you 100% trust this repository and know that nothing shady is going on?</h3>
-						<p>Trust is very important; you shouldn't blindly trust me nor any other <strong>3rd
-								party</strong> person/organization just because they say they are trustworthy. This
-							repository uses the simplest possible, yet effective, methods that make it very easy to
+						<p>This	repository uses the simplest possible, yet effective, methods that make it very easy to
 							verify:</p>
-						<ul>
-							<li>The script is in plain text, nothing hidden, no 3rd party executable or pre-compiled
-								binary is involved.</li>
+						<ul>							
 							<li>Change log history is present on GitHub. <em>(Despite some of my awkward documentation
 									typos)</em></li>
 							<li>You can open the file in <a class="theme-link"
 									href="https://code.visualstudio.com/">Visual Studio Code</a>/<a class="theme-link"
 									href="https://vscode.dev/">Visual Studio Code Web</a>, and view the script in a nice
 								easy to read environment, it's well formatted and indented.</li>
-							<li>You can learn PowerShell which is super easy, multiplatform, and useful for the future,
+								<li>You can even fork this repository, 100% verify it until that point in time, then verify
+									any subsequent changes/updates I push to this repository, <strong>at your own
+										pace</strong> (using <span class="hljs-string">Sync fork</span> and <span
+										class="hljs-string">Compare</span> options on your fork), and if you are happy with
+									the changes, allow it to be merged with your own copy/fork on your GitHub account.</li>
+							
+							
+								<li>You can learn PowerShell which is super easy, multiplatform, and useful for the future,
 								Microsoft Learn website teaches you everything, then you will understand everything in
 								the script is safe, or you can ask someone that you trust and knows PowerShell to verify
 								the script for you</li>
-							<li>There is no unexpected behavior involved.</li>
-							<li>You can even fork this repository, 100% verify it until that point in time, then verify
-								any subsequent changes/updates I push to this repository, <strong>at your own
-									pace</strong> (using <span class="hljs-string">Sync fork</span> and <span
-									class="hljs-string">Compare</span> options on your fork), and if you are happy with
-								the changes, allow it to be merged with your own copy/fork on your GitHub account.</li>
+							
+							
 							<li>The <a class="theme-link"
 									href="https://github.com/HotCakeX/Harden-Windows-Security/tree/main/Payload">Payload
 									folder</a> in this repository contains the files required to run this script:
