@@ -13587,6 +13587,7 @@
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
      font-weight: bold
+     
  }
 
 
@@ -13646,17 +13647,21 @@ https://gist.github.com/adimancv/eb2f4b46d3c95e6b8fe4dd52375236b2
      border: 0
  }
 
+/* commenting these because they are in conflict with the rainbow text color in this css element: .gist-data
+
  ::selection {
-     background: #24890d;
+     background: #46ccff;
      color: #fff;
      text-shadow: none
  }
 
  ::-moz-selection {
-     background: #24890d;
+     background: #46ccff;
      color: #fff;
      text-shadow: none
  }
+
+ */
 
  .blob-num {
      padding: 10px 8px 9px;
