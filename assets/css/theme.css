@@ -13200,11 +13200,11 @@
 
  .sidebar-ofdoc::-webkit-scrollbar {
      width: 6px;
-     background-color: #f5f5f5
+     background-color: #1f1f1f56
  }
 
  .sidebar-ofdoc::-webkit-scrollbar-thumb {
-     background-color: rgba(0, 0, 0, 0.125);
+     background-color: #1f1f1f56;
      border-radius: .5rem
  }
 
@@ -14431,7 +14431,7 @@ https://gist.github.com/adimancv/eb2f4b46d3c95e6b8fe4dd52375236b2
 
 
 
- /* Gist data */
+ /* Gist data - Added by me - to make the borders dark instead of white */
  .gist-data { 
      border-color: #ffffff !important;
      background-color: rgba(254, 67, 67, 0) !important;
