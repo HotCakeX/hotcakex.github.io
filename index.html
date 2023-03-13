@@ -509,6 +509,9 @@
 								</tbody>
 							</table>
 						</details>
+
+						<br>
+
 						<ul>
 							<li>Doesn't remove or disable Windows functionalities against Microsoft's recommendation.
 							</li>
@@ -1266,18 +1269,16 @@
 								<p>🔶 Enables the following secure Diffie-Hellman based key exchange algorithms which
 									are available in Windows 11 but not enabled by default, <a class="theme-link"
 										href="https://learn.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-11">according
-										to this Microsoft Document</a>: <span
-										class="hljs-string">&quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA&quot;</span>,<span
-										class="hljs-string">&quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;</span>,<span
-										class="hljs-string">&quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;</span></p>
+										to this Microsoft Document</a>:
+										<script src="https://gist.github.com/HotCakeX/58adf85725de2d44373350ff1140d792.js"></script>
+									</p>
 							</li>
 							<li>
 								<p>🔶 Disables <span class="hljs-string">NULL</span> ciphers that are <strong>only
-										available for backward compatibility</strong>:<span
-										class="hljs-string">&quot;TLS_RSA_WITH_NULL_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_NULL_SHA&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_NULL_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_NULL_SHA256&quot;</span></p>
+										available for backward compatibility</strong>:
+										<script src="https://gist.github.com/HotCakeX/4ee98ecd183ed0028e1ebec12228d01a.js"></script>
+									
+									</p>
 							</li>
 							<li>
 								<p>🔶 Disables <a class="theme-link"
@@ -1290,31 +1291,17 @@
 										href="https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices">weak
 										cipher suites</a> that are <strong>only available for backward
 										compatibility</p></strong>
-								<p><span class="hljs-string">
-										&quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;</span><br>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;</span>,<span
-										class="hljs-string">&quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;</span><br>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_256_GCM_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_128_GCM_SHA256&quot;</span><br>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_256_CBC_SHA384&quot;</span>,<span
-										class="hljs-string">&quot;TLS_PSK_WITH_AES_128_CBC_SHA256&quot;</span></p>
+								<p>
+									
+									<script src="https://gist.github.com/HotCakeX/a8700ccafbd394ebf552f84f5b6fe13a.js"></script>
+									
+									</p>
 							</li>
 							<li>
 								<p>🔶 Disables the following <a class="theme-link"
 										href="https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices">weak
 										ciphers</a> that are <strong>only available for backward compatibility</strong>:
-									<span class="hljs-string">&quot;DES 56-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC2 40-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC2 56-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC2 128-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC4 40-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC4 56-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC4 64-bit&quot;</span>,<span
-										class="hljs-string">&quot;RC4 128-bit&quot;</span>,<span
-										class="hljs-string">&quot;3DES 168-bit (Triple DES 168)&quot;</span>
+										<script src="https://gist.github.com/HotCakeX/068fddee4b9b589b63e0a2fb218a7985.js"></script>
 								</p>
 							</li>
 						</ul>
@@ -1413,8 +1400,8 @@
 								</ul>
 							</li>
 							<li>
-								<p>🟩 🔻#TopSecurity🔺<a class="theme-link"
-										href="https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name">Don't
+								<p>🟩 <span class="hljs-string">#TopSecurity</span><a class="theme-link"
+										href="https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name"> Don't
 										display last signed-in</a>; This security policy setting determines whether the
 									name of the last user to sign in to the device is displayed on the Secure Desktop.
 									If this policy is enabled, the full name of the last user to successfully sign in
@@ -1488,7 +1475,7 @@
 								</ul>
 							</li>
 							<li>
-								<p>🟩 🔻#TopSecurity🔺Only elevate executables that are signed and validated <a
+								<p>🟩 <span class="hljs-string">#TopSecurity</span> Only elevate executables that are signed and validated <a
 										class="theme-link"
 										href="https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-account-control-only-elevate-executables-that-are-signed-and-validated">by
 										enforcing cryptographic signatures on any interactive application</a> that
@@ -1503,7 +1490,7 @@
 										of the elevation prompt for standard users</a> from &quot;prompt for
 									credentials&quot; to &quot;prompt for credentials on the secure desktop&quot;.</p>
 								<ul>
-									<li>🔻#TopSecurity🔺 behavior: Automatically deny all UAC prompts on Standard
+									<li><span class="hljs-string">#TopSecurity</span> behavior: Automatically deny all UAC prompts on Standard
 										accounts. <strong>Highly recommended to be used on sensitive critical
 											machines.</strong> Only use Standard account for regular everyday tasks, and
 										if you want to perform administrative tasks such as intalling a program
@@ -1517,7 +1504,7 @@
 								</ul>
 							</li>
 							<li>
-								<p>🟩 🔻#TopSecurity🔺Hides the entry points for <a class="theme-link"
+								<p>🟩 <span class="hljs-string">#TopSecurity</span> Hides the entry points for <a class="theme-link"
 										href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowslogon">Fast
 										User Switching</a>.</p>
 							</li>
