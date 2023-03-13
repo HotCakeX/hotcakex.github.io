@@ -13578,7 +13578,9 @@
  }
 
 
- /* For Codes on the website */
+
+
+ /* Added This For Codes on the website */
 
 
  .hljs-string {
@@ -13591,7 +13593,16 @@
  }
 
 
-  /* For Gist Codes on the website to be dark*/
+
+
+
+
+
+
+
+
+
+  /* Added this For Gist Codes on the website to be dark*/
 
 
  /*!
@@ -14436,7 +14447,7 @@ https://gist.github.com/adimancv/eb2f4b46d3c95e6b8fe4dd52375236b2
 
 
 
- /* Gist data - Added by me - to make the borders dark instead of white */
+ /* Gist data - Added this to make the borders dark instead of white */
  .gist-data { 
      border-color: #ffffff !important;
      background-color: rgba(254, 67, 67, 0) !important;
@@ -14444,3 +14455,18 @@ https://gist.github.com/adimancv/eb2f4b46d3c95e6b8fe4dd52375236b2
 
 
   /* END OF Gist Codes on the website */
+
+
+
+
+
+
+
+
+  /* Added this to center simple lightbox plugin's images */
+.simplelightbox-gallery{    
+    bottom:0px;
+    justify-content:center;
+   }
+   
+   
