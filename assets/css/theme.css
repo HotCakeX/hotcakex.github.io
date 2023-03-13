@@ -14466,7 +14466,7 @@ https://gist.github.com/adimancv/eb2f4b46d3c95e6b8fe4dd52375236b2
   /* Added this to center simple lightbox plugin's images */
 .simplelightbox-gallery{    
     bottom:0px;
-    justify-content:center;
+    justify-content:center  
    }
    
    
