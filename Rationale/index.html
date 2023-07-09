@@ -883,14 +883,24 @@ or on
 </li>
 </ul>
 <p><br></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>It is important to be aware of <a href="https://bios-pw.org/">potential hardware backdoors</a> that may compromise the security of your system. Some common OEMs, such as Compaq, Dell, Fujitsu, Hewlett-Packard (HP), Sony, and Samsung, with OEMs that use unmodified Insyde H20, or Phoenix firmwares utilize algorithms based on device serial numbers for password resets. These algorithms allow for master password removal from the firmware, potentially granting unauthorized access to the system. <a href="https://docs.mootinc.com/Reference/Architecture/Hardware-Selection/#psm-mode">Read more</a></p>
-</div>
+<blockquote>
+<p><strong>Warning</strong>
+It is important to be aware of <a href="https://bios-pw.org/">potential hardware backdoors</a> that may compromise the security of your system. Some common OEMs, such as Compaq, Dell, Fujitsu, Hewlett-Packard (HP), Sony, and Samsung, with OEMs that use unmodified Insyde H20, or Phoenix firmwares utilize algorithms based on device serial numbers for password resets. These algorithms allow for master password removal from the firmware, potentially granting unauthorized access to the system. <a href="https://docs.mootinc.com/Reference/Architecture/Hardware-Selection/#psm-mode">Read more</a></p>
+</blockquote>
 <p><br></p>
 <h3 id="protection-against-byovd-bring-your-own-vulnerable-driver-attacks">Protection against BYOVD (Bring Your Own Vulnerable Driver) attacks<a class="headerlink" href="#protection-against-byovd-bring-your-own-vulnerable-driver-attacks" title="Permanent link">&para;</a></h3>
 <p>Secured core PCs provide the hardware that is capable of protecting against BYOVD attacks. It is your responsibility to turn the features on, those include WDAC (Windows Defender Application Control), ASR (Attack Surface Reduction) rules, Dynamic/static root of trust, <a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/bringup/firmware-attack-surface-reduction">firmware</a> that is extensible for revoking drivers.</p>
 <p>For drivers not explicitly mentioned in the Microsoft Recommended Driver Block List, which are the more dynamic side of things, ASR is able to protect against BYOVD, ELAM (Early launch anti-malware), part of the MDAV is also able to do that, all because of the ISG (Intelligent Security Graph).</p>
+<p><br> </p>
+<p align="center">
+<b>YOUTUBE VIDEO: How to easily protect against BYOVD attack scenarios with WDAC policy in Windows</b><br><br>
+  <a href="https://www.youtube.com/watch?v=SQCo9l2P7uw">
+    <img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/YouTubeLogoBYOVD.png" width="500"
+         alt="YOUTUBE VIDEO: How to easily protect against BYOVD attack scenarios with WDAC policy in Windows - Windows Defender">
+  </a>
+  </p>
+
+<p><br></p>
 <p><br></p>
 <h2 id="what-to-do-when-there-is-an-attack"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/Red%20police%20light.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/Red%20police%20light.gif"></a> What to do when there is an attack ?<a class="headerlink" href="#what-to-do-when-there-is-an-attack" title="Permanent link">&para;</a></h2>
 <h3 id="you-can-hire-any-of-these-teams">You can hire any of these teams<a class="headerlink" href="#you-can-hire-any-of-these-teams" title="Permanent link">&para;</a></h3>
