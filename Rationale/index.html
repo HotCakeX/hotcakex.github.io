@@ -798,7 +798,7 @@ or on
 </ol>
 <p><br></p>
 <h2 id="what-about-other-enterprise-security"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/StonkUp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/StonkUp.png"></a> What about other Enterprise security ?<a class="headerlink" href="#what-about-other-enterprise-security" title="Permanent link">&para;</a></h2>
-<p align="center"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/PNG%20and%20JPG/534534.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/PNG%20and%20JPG/534534.png" width="600"></a></p>
+<p align="center"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/PNG%20and%20JPG/534534.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/PNG%20and%20JPG/534534.png" width="650"></a></p>
 
 <p><br></p>
 <p>Windows Defender Application Control is not the only security solution for enterprises and businesses; it’s just one piece of the puzzle. There are other necessary ways to secure these devices, such as a wide range of security services that create bulletproof devices for various organizations and use cases:</p>
@@ -884,8 +884,8 @@ or on
 </li>
 </ul>
 <p><br></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>It is important to be aware of <a href="https://bios-pw.org/">potential hardware backdoors</a> that may compromise the security of your system. Some common OEMs, such as Compaq, Dell, Fujitsu, Hewlett-Packard (HP), Sony, and Samsung, with OEMs that use unmodified Insyde H20, or Phoenix firmwares utilize algorithms based on device serial numbers for password resets. These algorithms allow for master password removal from the firmware, potentially granting unauthorized access to the system. <a href="https://docs.mootinc.com/Reference/Architecture/Hardware-Selection/#psm-mode">Read more</a></p>
 </div>
 <p><br></p>
@@ -926,17 +926,17 @@ or on
 <p><br></p>
 <h2 id="for-penetration-testing-and-benchmarking"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/david%20star.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/david%20star.gif"></a> For Penetration testing and benchmarking<a class="headerlink" href="#for-penetration-testing-and-benchmarking" title="Permanent link">&para;</a></h2>
 <p>How to properly perform a pentest and benchmark a system hardened by this repository and make it as close to the real-world scenario as possible:</p>
+<ol>
+<li>
+<p>Use a physical machine if possible, it should have Windows 11 certified hardware, <a href="https://learn.microsoft.com/en-us/windows-server/remote/multipoint-services/create-a-standard-user-account">Standard user account</a>.</p>
 <ul>
-<li>
-<p>Use a physical machine if possible, it should have Windows 11 certified hardware.</p>
-</li>
-<li>
-<p>If you can't use a physical machine, use Hyper-V hypervisor. It properly passes the UEFI lock from the host to the guest VM. Your host (aka physical machine) must have Windows 11 certified hardware and meet all the hardware and UEFI security requirements explained in the Readme. VMs however are prone to side channel attacks, so don't use that attack vector in pentests if you want more realistic results.</p>
-</li>
-<li>
-<p>First apply the Harden Windows Security script and then use the <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDACConfig">WDACConfig module</a> to deploy a suitable WDAC policy.</p>
-</li>
+<li>If you can't use a physical machine, use Hyper-V hypervisor. Your host (aka physical machine) must have Windows 11 certified hardware and meet all the hardware and UEFI security requirements explained in the Readme. VMs however are prone to side channel attacks, so don't use that attack vector in pentests if you want more realistic results.</li>
 </ul>
+</li>
+<li>
+<p><strong>First apply the <a href="https://github.com/HotCakeX/Harden-Windows-Security">Harden Windows Security script</a> <em>(All categories of it)</em> and then use the <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDACConfig">WDACConfig module</a> to deploy a suitable <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/How-to-Create-and-Deploy-a-Signed-WDAC-Policy-Windows-Defender-Application-Control#system-behavior">Signed</a> WDAC policy.</strong></p>
+</li>
+</ol>
 <p><br></p>
 <h2 id="any-questions-or-suggestions"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/WhiteGhost.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/WhiteGhost.gif"></a> Any questions or suggestions?<a class="headerlink" href="#any-questions-or-suggestions" title="Permanent link">&para;</a></h2>
 <p>Please open a new <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues">issue</a> or <a href="https://github.com/HotCakeX/Harden-Windows-Security/discussions">discussion</a> in the repository.</p>
