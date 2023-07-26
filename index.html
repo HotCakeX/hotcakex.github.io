@@ -1847,9 +1847,6 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <li>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <strong>#TopSecurity</strong> <a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/200iq.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/200iq.gif" width="28" alt="TopSecurity"></a> Hides the entry points for <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowslogon">Fast User Switching</a>.</p>
 </li>
-<li>
-<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> <strong>(Requires additional confirmation to run):</strong> <a href="https://github.com/HotCakeX/Harden-Windows-Security/discussions/30#discussioncomment-5627737">Asks for a strong password for the built-in Administrator account and then enables it.</a></p>
-</li>
 </ul>
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
@@ -1985,7 +1982,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> <a href="https://learn.microsoft.com/en-us/powershell/module/dism/remove-windowscapability">Uninstalls</a> these optional features (Windows Settings -&gt; Apps -&gt; Optional Features):</p>
 <ul>
 <li>Notepad (system): legacy Notepad program. Windows 11 has multi-tabbed modern Notepad app.</li>
-<li>VBSCRIPT; a legacy scripting engine component, Microsoft does not recommend using this component unless and until it is really required. It's become uninstallable as an optional features since Windows 11 insider Dev build 25309.</li>
+<li>VBSCRIPT; a legacy scripting engine component, Microsoft does not recommend using this component unless and until it is really required. It's become uninstallable as an optional features since Windows 11 insider Dev <a href="https://techcommunity.microsoft.com/t5/windows-insider-program/windows-11-insider-dev-build-25309-allows-for-uninstallation-of/m-p/3759739">build 25309</a>.</li>
 <li><a href="https://learn.microsoft.com/en-us/deployedge/edge-ie-mode">Internet Explorer mode for Edge browser</a>; It's only used by a few possible organizations that have very old internal websites.</li>
 <li><a href="https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic">WMIC</a>; old feature that's deprecated, not secure and is in <a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules">Microsoft recommended block rules.</a></li>
 </ul>
@@ -2035,7 +2032,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 </ul>
 </li>
 <li>
-<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Disables location service system wide. Websites and apps won't be able to use your precise location, however they will still be able to detect your location using your IP address.</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Disables location services (Location, Windows Location Provider, Location Scripting) system wide. Websites and apps won't be able to use your precise location, however they will still be able to detect your location using your IP address.</p>
 </li>
 <li>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-servicecontrolmanager"><code>svchost.exe</code> mitigations.</a> built-in system services hosted in <code>svchost.exe</code> processes will have stricter security policies enabled on them. These stricter security policies include a policy requiring all binaries loaded in these processes to be signed by Microsoft, and a policy disallowing dynamically generated code.</p>
@@ -2068,10 +2065,44 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Changes Windows time sync interval from the default every 7 days to every 4 days (= every 345600 seconds)</p>
 </li>
 <li>
-<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Creates custom views for <a href="https://learn.microsoft.com/en-us/shows/inside/event-viewer">Windows Event Viewer</a> to help keep tabs on important security events: <code>Attack Surface Reduction Rules</code>, <code>Controlled Folder Access</code>, <code>Exploit Protection</code>, <code>Network Protection</code>, <code>MSI and Scripts for WDAC Auditing</code>, <code>Sudden Shut down events</code> (due to power outage) and <code>Code Integrity Operational</code>.</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Creates custom views for <a href="https://learn.microsoft.com/en-us/shows/inside/event-viewer">Windows Event Viewer</a> to help keep tabs on important security events:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide">Understand and use attack surface reduction capabilities</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations">Understanding Application Control events</a></li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide#xml-for-attack-surface-reduction-rule-events">Attack Surface Reduction Rules</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide#xml-for-controlled-folder-access-events">Controlled Folder Access</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide#xml-for-exploit-protection-events">Exploit Protection</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide#xml-for-network-protection-events">Network Protection</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations">MSI and Scripts for WDAC Auditing</a></p>
+</li>
+<li>
+<p>Sudden Shut down events (due to power outage)</p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations">Code Integrity Operational (WDAC)</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/incorrect-shutdown-reason-code-sel">Restarts (By user or by the System/Apps)</a></p>
+</li>
+<li>
+<p>Workstation <a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4800">Locks</a> and <a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4801">Unlocks</a></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-other-logonlogoff-events">Checks to make sure <code>Other Logon/Logoff Events</code> Audit is active</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4776">Failed Login attempts via PIN at lock screen</a></p>
+<ul>
+<li>Error/Status code <code>0xC0000064</code> indicates wrong PIN entered at lock screen</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -2266,7 +2297,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <p><a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Payload/ProcessMitigations.csv">ProcessMitigations.csv</a> includes process mitigations data used by this script, viewable in plain text and easily verifiable.</p>
 </li>
 <li>
-<p><a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Payload/EventViewerCustomViews.zip">EventViewerCustomViews.zip</a> includes XML files, in plain text, easily readable and verifiable. the script downloads and copies them to <code>C:\ProgramData\Microsoft\Event Viewer\Views</code> so that when you open <a href="https://learn.microsoft.com/en-us/host-integration-server/core/windows-event-viewer1">Windows Event Viewer</a>, you will find custom views as explained in the <a href="#miscellaneous-configurations">Miscellaneous Configurations</a> category.</p>
+<p><a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Payload/EventViewerCustomViews.zip">EventViewerCustomViews.zip</a> includes XML files, in plain text, easily readable and verifiable. The script downloads and copies them to <code>C:\ProgramData\Microsoft\Event Viewer\Views</code> so that when you open <a href="https://learn.microsoft.com/en-us/host-integration-server/core/windows-event-viewer1">Windows Event Viewer</a>, you will find custom views as explained in the <a href="#miscellaneous-configurations">Miscellaneous Configurations</a> category.</p>
 </li>
 <li>
 <p><a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Payload/Security-Baselines-X.zip">Security-Baselines-X.zip</a> includes Group Policies that are used by this script to apply the security measures explained in this page.</p>
@@ -2281,10 +2312,10 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 </ul>
 <p><br></p>
 <!-- Security-Baselines-X-VT:START -->
-<p><a href='https://www.virustotal.com/gui/file/c65c65a50203e5609bdd0b7e04fa74cb325ca8d3ee50aaeea43ff279f87ab1e9'>Virus Total scan results of Security-Baselines-X.zip</a></p>
+<p><a href='https://www.virustotal.com/gui/file/3bfc7118a8d673f5a4991aa67720d1344ef2b08db8f46745e3614ad4a735eacf'>Virus Total scan results of Security-Baselines-X.zip</a></p>
 <p><br></p>
 <!-- EventViewer-CustomViews-VT:START -->
-<p><a href='https://www.virustotal.com/gui/file/3303d00c7fd26be51a7d893d5434867df2e1f50a362fc65bb2d18d0427be3adb'>Virus Total scan results of EventViewerCustomViews.zip</a></p>
+<p><a href='https://www.virustotal.com/gui/file/863d6adf3c74ec426762444652e04c017261aaad13d3124171574ec9c24281ac'>Virus Total scan results of EventViewerCustomViews.zip</a></p>
 <p><br>
 <br></p>
 <p><em>Links above are automatically updated. There is a <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/VirusTotal.yml">GitHub workflow</a> that automatically detects changes to the files and uploads them to Virus Total website for scanning.</em></p>
@@ -2481,7 +2512,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-07-23T22:55:43+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-07-25T16:01:32+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-25</span>
       
         <br>
         Created:
