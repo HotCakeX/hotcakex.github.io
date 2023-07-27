@@ -17,7 +17,7 @@
         <link rel="next" href="Rationale/">
       
       <link rel="icon" href="images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.20">
     
     
       
@@ -1697,6 +1697,12 @@ From Top to bottom in order:</p>
 </li>
 </ul>
 </li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/63">AMD Zen 2 or 3 CPUs have a vulnerability in them</a>, if you use one of them, make sure your Bitlocker Startup PIN is at least 20 characters long.</p>
+</div>
+<ul>
 <li>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables or disables <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures#protecting-thunderbolt-and-other-dma-ports">DMA protection from Bitlocker Countermeasures</a> based <a href="https://github.com/MicrosoftDocs/windows-itpro-docs/issues/6878#issuecomment-742429128">on the status</a> of <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt">Kernel DMA protection</a>. Kernel DMA Protection is <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#system-compatibility">not compatible</a> with other BitLocker DMA attacks countermeasures. It is recommended to disable the BitLocker DMA attacks countermeasures if the system supports Kernel DMA Protection (this script does that exactly). Kernel DMA Protection provides higher security bar for the system over the BitLocker DMA attack countermeasures, while maintaining usability of external peripherals. you can check the status of Kernel DMA protection <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#how-to-check-if-kernel-dma-protection-is-enabled">using this official guide</a>.</p>
 <ul>
@@ -2242,7 +2248,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Shows hidden files, folders and drives (toggles the control panel folder options item)</li>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Disables websites accessing local language list - good for privacy</li>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Turns off safe search in Windows search, will enable +18 content to appear in searches; essentially toggles the button in: Windows settings &gt; privacy and security &gt; search permissions &gt; safe search</li>
-<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> prevents showing notifications in Lock screen - this is the same as toggling the button in Windows settings &gt; system &gt; notifications &gt; show notifications in the lock screen</li>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Prevents showing notifications in Lock screen - This is the same as toggling the button in Windows settings &gt; system &gt; notifications &gt; show notifications in the lock screen</li>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Enables Clipboard History and sync with Microsoft Account</li>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Turns on text suggestions when typing on the physical keyboard</li>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> Turns on "Multilingual text suggestions" for the current user, toggles the option in Windows settings</li>
@@ -2471,7 +2477,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 </ul>
 <p><br></p>
 <h2 id="license">License<a href="#license"><img alt="LicenseFreeIcon" src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/LicenseFree.png" /></a><a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>Using <a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/LICENSE">GPL-2.0 license</a>. Just free information, because the only mission of this GitHub repository is to give all Windows users accurate, up to date and correct facts and information about how to stay secure and safe in dangerous environments, and to stay not one, but Many steps, ahead of threat actors.</p>
+<p>Using <a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/LICENSE">MIT License</a>. Free information, because the only mission of this GitHub repository is to give all Windows users accurate, up to date and correct facts and information about how to stay secure and safe in dangerous environments, and to stay not one, but Many steps, ahead of threat actors.</p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="Harden-Windows-Security is a PowerShell script"></a></p>
 <p><br></p>
 <p align="center">
@@ -2495,24 +2501,15 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <a href="https://spynetgirl.medium.com/"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/e0759dbc5b10c7ff9c10d09a49639e40ec780151/Private/Images/Socials/medium.svg"></a>
 </p>
 
-<p><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="Harden-Windows-Security is a PowerShell script"></p>
-<p align="center"> <a href="#readme-top">
-
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/AU.png" alt="Flag of Australia">
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/USA.png" alt="Flag of United States">
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/EU.png" alt="Flag of EU">
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/NATO.png" alt="Flag of NATO">
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/UK.png" alt="Flag of United Kingdom">
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Israel.png" alt="Flag of Israel">
-
-</a> </p>
+<p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="Harden-Windows-Security is a PowerShell script"></a></p>
+<p><br></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-07-26T09:24:23+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-07-27T13:46:53+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-07-27</span>
       
         <br>
         Created:
