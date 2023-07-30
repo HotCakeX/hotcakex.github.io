@@ -461,22 +461,22 @@ or on
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#github-source" class="md-nav__link">
-     GitHub source
+  <a href="#hardening-script-only" class="md-nav__link">
+     Hardening Script Only
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#azure-devops-source" class="md-nav__link">
-     Azure DevOps source
+  <a href="#compliance-checking-security-score-hardening" class="md-nav__link">
+     Compliance Checking (Security Score) + Hardening
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#powershell-gallery" class="md-nav__link">
-     PowerShell Gallery
+  <a href="#hardening-script-only_1" class="md-nav__link">
+     Hardening Script Only
   </a>
   
 </li>
@@ -901,22 +901,22 @@ or on
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#github-source" class="md-nav__link">
-     GitHub source
+  <a href="#hardening-script-only" class="md-nav__link">
+     Hardening Script Only
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#azure-devops-source" class="md-nav__link">
-     Azure DevOps source
+  <a href="#compliance-checking-security-score-hardening" class="md-nav__link">
+     Compliance Checking (Security Score) + Hardening
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#powershell-gallery" class="md-nav__link">
-     PowerShell Gallery
+  <a href="#hardening-script-only_1" class="md-nav__link">
+     Hardening Script Only
   </a>
   
 </li>
@@ -1277,19 +1277,27 @@ Harden Windows Safely, Securely, only with Official Microsoft methods
 <p>Windows by default is secure and safe, this repository does not imply nor claim otherwise. just like anything, you have to use it wisely and don't compromise yourself with reckless behavior and bad user configuration; Nothing is foolproof. This repository only uses the tools and features that have already been implemented by Microsoft in Windows OS to fine-tune it towards the highest security and locked-down state, using well-documented, supported, recommended and official methods. continue reading for comprehensive info.</p>
 </div>
 <h2 id="how-to-use">How To Use<a href="#how-to-use"><img alt="HowToUseIcon" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/HowToUse.png" /></a><a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
-<p>There are 3 ways you can use this script. Using GitHub and Azure sources means you'll always use the latest version.</p>
-<p>When the script is installed using PowerShell Gallery source and you run it, if there is a new version available, you will be prompted to update it.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-expression?view=powershell-7.3">Invoke-Expression or iex</a></p>
+<p class="admonition-title">Note<p>About <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-expression?view=powershell-7.3">Invoke-Expression or iex</a></p>
+</p>
 </div>
-<h3 id="github-source"><a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Harden-Windows-Security.ps1"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/github.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/github.svg"></a> GitHub source</a><a class="headerlink" href="#github-source" title="Permanent link">&para;</a></h3>
+<h3 id="hardening-script-only"><a href="https://github.com/HotCakeX/Harden-Windows-Security/blob/main/Harden-Windows-Security.ps1"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/github.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/github.svg"></a> Hardening Script Only</a><a class="headerlink" href="#hardening-script-only" title="Permanent link">&para;</a></h3>
+<p>Run the latest version of the Harden Windows Security Script directly from this GitHub repository</p>
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">irm </span><span class="s1">&#39;https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/Harden-Windows-Security.ps1&#39;</span> <span class="p">|</span> <span class="nb">iex</span>
 </span></code></pre></div>
-<h3 id="azure-devops-source"><a href="https://dev.azure.com/SpyNetGirl/_git/Harden-Windows-Security?path=/Harden-Windows-Security.ps1"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/azure.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/azure.svg"></a> Azure DevOps source</a><a class="headerlink" href="#azure-devops-source" title="Permanent link">&para;</a></h3>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">irm </span><span class="s1">&#39;https://dev.azure.com/SpyNetGirl/011c178a-7b92-462b-bd23-2c014528a67e/_apis/git/repositories/5304fef0-07c0-4821-a613-79c01fb75657/items?path=/Harden-Windows-Security.ps1&#39;</span> <span class="p">|</span> <span class="nb">iex</span>
+<p><br></p>
+<h3 id="compliance-checking-security-score-hardening"><a href="https://www.powershellgallery.com/packages/Harden-Windows-Security-Module"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/powershell.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/powershell.svg"></a> Compliance Checking (Security Score) + Hardening</a><a class="headerlink" href="#compliance-checking-security-score-hardening" title="Permanent link">&para;</a></h3>
+<p>Install the <a href="https://www.powershellgallery.com/packages/Harden-Windows-Security-Module">Harden Windows Security Module</a> from PowerShell gallery, which offers both hardening and system compliance checking (security score). See how secure your system is!</p>
+<p><a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Harden%E2%80%90Windows%E2%80%90Security%E2%80%90Module">More info in the Wiki page</a></p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">Harden-Windows-Security-Module</span> <span class="n">-Force</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c"># Compliance Checking + Security Score</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">Confirm-SystemCompliance</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c"># Hardening</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">Protect-WindowsSecurity</span>
 </span></code></pre></div>
-<h3 id="powershell-gallery"><a href="https://www.powershellgallery.com/packages/Harden-Windows-Security"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/powershell.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/powershell.svg"></a> PowerShell Gallery</a><a class="headerlink" href="#powershell-gallery" title="Permanent link">&para;</a></h3>
+<p><br></p>
+<h3 id="hardening-script-only_1"><a href="https://www.powershellgallery.com/packages/Harden-Windows-Security"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/powershell.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/SVGs/powershell.svg"></a> Hardening Script Only</a><a class="headerlink" href="#hardening-script-only_1" title="Permanent link">&para;</a></h3>
+<p>Install only the <a href="https://www.powershellgallery.com/packages/Harden-Windows-Security">Harden Windows Security Script</a> from PowerShell gallery. When you run it and if there is a new version, you will be notified.</p>
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Install-Script</span> <span class="n">-Name</span> <span class="n">Harden-Windows-Security</span>
 </span></code></pre></div>
 <p><br></p>
@@ -1640,6 +1648,9 @@ From Top to bottom in order:</p>
 </li>
 <li>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/defender-csp#configurationoobeenablertpandsigupdate">Configures</a> real-time protection and Security Intelligence Updates to be enabled during OOBE.</p>
+</li>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/roratinggem.gif" width="28" alt="Rotating pink gem denoting registry or cmdlet"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/defender-csp#configurationinteltdtenabled">Enables</a> the <a href="https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-against-ransomware-with-microsoft-defender-for/ba-p/3243941">Intel TDT</a> (Intel® Threat Detection Technology) integration with Microsoft Defender.</p>
 </li>
 </ul>
 <p><br></p>
@@ -2109,6 +2120,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <li>Error/Status code <code>0xC0000064</code> indicates wrong PIN entered at lock screen</li>
 </ul>
 </li>
+<li>USB storage Connects &amp; Disconnects (Flash drives, phones etc.)</li>
 </ul>
 </li>
 <li>
@@ -2321,7 +2333,7 @@ The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38"
 <p><a href='https://www.virustotal.com/gui/file/3bfc7118a8d673f5a4991aa67720d1344ef2b08db8f46745e3614ad4a735eacf'>Virus Total scan results of Security-Baselines-X.zip</a></p>
 <p><br></p>
 <!-- EventViewer-CustomViews-VT:START -->
-<p><a href='https://www.virustotal.com/gui/file/863d6adf3c74ec426762444652e04c017261aaad13d3124171574ec9c24281ac'>Virus Total scan results of EventViewerCustomViews.zip</a></p>
+<p><a href='https://www.virustotal.com/gui/file/7895f1d4a45f0fe2fdd38d6e7f7a98ef4c83ad4b05c8fcc3aa45f8e3ffe9081d'>Virus Total scan results of EventViewerCustomViews.zip</a></p>
 <p><br>
 <br></p>
 <p><em>Links above are automatically updated. There is a <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/VirusTotal.yml">GitHub workflow</a> that automatically detects changes to the files and uploads them to Virus Total website for scanning.</em></p>
