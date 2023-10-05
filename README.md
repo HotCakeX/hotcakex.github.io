@@ -1,0 +1,1 @@
+[![pages-build-deployment](https://github.com/HotCakeX/hotcakex.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/HotCakeX/hotcakex.github.io/actions/workflows/pages/pages-build-deployment)
