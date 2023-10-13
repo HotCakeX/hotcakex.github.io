@@ -2124,16 +2124,16 @@ This is to prevent an <strong>Attacker with skill and lengthy physical access to
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> The module <a href="https://learn.microsoft.com/en-us/powershell/module/dism/disable-windowsoptionalfeature">disables</a> the following rarely used features in <a href="https://learn.microsoft.com/en-us/windows/application-management/add-apps-and-features#use-windows-powershell-to-disable-specific-features">Windows optional features</a> (Control Panel):</p>
 <ul>
 <li>
-<p>PowerShell v2; because it's old and doesn't support <a href="https://devblogs.microsoft.com/powershell/powershell-the-blue-team/#antimalware-scan-interface-integration">AMSI</a>.</p>
+<p>PowerShell v2: because it's old and doesn't support <a href="https://devblogs.microsoft.com/powershell/powershell-the-blue-team/#antimalware-scan-interface-integration">AMSI</a>.</p>
 </li>
 <li>
-<p>Work Folders client; not used when your computer is not part of a domain or enterprise network.</p>
+<p>Work Folders client: not used when your computer is not part of a domain or enterprise network.</p>
 </li>
 <li>
-<p>Internet Printing Client; used in combination with IIS web server, <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/printing/manage-connect-printers-use-web-browser">old feature</a>, can be disabled without causing problems further down the road.</p>
+<p>Internet Printing Client: used in combination with IIS web server, <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/printing/manage-connect-printers-use-web-browser">old feature</a>, can be disabled without causing problems further down the road.</p>
 </li>
 <li>
-<p>Windows Media Player (legacy); isn't needed anymore, <a href="https://blogs.windows.com/windows-insider/2021/11/16/new-media-player-for-windows-11-begins-rolling-out-to-windows-insiders/">Windows 11 has a modern media player app</a>.</p>
+<p>Windows Media Player (legacy): isn't needed anymore, <a href="https://blogs.windows.com/windows-insider/2021/11/16/new-media-player-for-windows-11-begins-rolling-out-to-windows-insiders/">Windows 11 has a modern media player app</a>.</p>
 </li>
 </ul>
 </li>
@@ -2144,13 +2144,19 @@ This is to prevent an <strong>Attacker with skill and lengthy physical access to
 <p>Notepad (system): legacy Notepad program. Windows 11 has multi-tabbed modern Notepad app.</p>
 </li>
 <li>
-<p>VBSCRIPT; a legacy scripting engine component, Microsoft does not recommend using this component unless and until it is really required. It's become uninstallable as an optional features since Windows 11 insider Dev <a href="https://techcommunity.microsoft.com/t5/windows-insider-program/windows-11-insider-dev-build-25309-allows-for-uninstallation-of/m-p/3759739">build 25309</a>.</p>
+<p>VBSCRIPT: a legacy <a href="https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features">deprecated</a> scripting engine component, <a href="https://techcommunity.microsoft.com/t5/windows-insider-program/windows-11-insider-dev-build-25309-allows-for-uninstallation-of/m-p/3759739">Microsoft does not recommend</a> using this component unless and until it is really required.</p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/deployedge/edge-ie-mode">Internet Explorer mode for Edge browser</a>; It's only used by a few possible organizations that have very old internal websites.</p>
+<p><a href="https://learn.microsoft.com/en-us/deployedge/edge-ie-mode">Internet Explorer mode for Edge browser</a>: It's only used by a few possible organizations that have very old internal websites.</p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic">WMIC</a>; old feature that's deprecated, not secure and is in <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/design/applications-that-can-bypass-wdac">Microsoft recommended block rules.</a></p>
+<p><a href="https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmic">WMIC</a>: Old and <a href="https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features">deprecated</a>, not secure and is in <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/design/applications-that-can-bypass-wdac">Microsoft recommended block rules.</a></p>
+</li>
+<li>
+<p>WordPad: Old and <a href="https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features">deprecated</a>. None of the new features of Word documents are supported in it. Recommended to use <a href="https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web">Word Online</a>, Notepad or M365 Word.</p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise">PowerShell ISE</a>: Old PowerShell environment that doesn't support versions above 5.1. Highly recommended to use <a href="https://apps.microsoft.com/detail/visual-studio-code/XP9KHM4BK9FZ7Q">Visual Studio Code</a> for PowerShell usage and <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki#-powershell">learning</a>. You can even replicate the <a href="https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/how-to-replicate-the-ise-experience-in-vscode">ISE experience in Visual Studio Code</a>. You can access <a href="https://vscode.dev/">Visual Studio Code online in your browser</a> without the need to install anything. </p>
 </li>
 </ul>
 </li>
@@ -2158,16 +2164,16 @@ This is to prevent an <strong>Attacker with skill and lengthy physical access to
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> <a href="https://learn.microsoft.com/en-us/powershell/module/dism/enable-windowsoptionalfeature">Enables</a> these optional features (Control Panel):</p>
 <ul>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview">Microsoft Defender Application Guard</a>; which is a safe Environment to open untrusted websites. - <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/microsoft-defender-application-guard/reqs-md-app-guard">System Requirements</a> - <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/microsoft-defender-application-guard/faq-md-app-guard">Frequently asked questions</a> - Its behavior regarding <a href="#notes-about-mdag-microsoft-defender-application-guard">DNS over HTTPS in Edge</a></p>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview">Microsoft Defender Application Guard</a>: which is a safe Environment to open untrusted websites. - <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/microsoft-defender-application-guard/reqs-md-app-guard">System Requirements</a> - <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/microsoft-defender-application-guard/faq-md-app-guard">Frequently asked questions</a> - Its behavior regarding <a href="#notes-about-mdag-microsoft-defender-application-guard">DNS over HTTPS in Edge</a></p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview">Windows Sandbox</a>; install, test and use programs in a disposable virtual operation system, completely separate from your  main OS</p>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview">Windows Sandbox</a>: install, test and use programs in a disposable virtual operation system, completely separate from your  main OS</p>
 </li>
 <li>
-<p>Hyper-V; a great hybrid hypervisor (Type 1 and Type 2) to run virtual machines on. <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Hyper-V">check out this Hyper-V Wiki page</a></p>
+<p>Hyper-V: a great hybrid hypervisor (Type 1 and Type 2) to run virtual machines on. <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Hyper-V">check out this Hyper-V Wiki page</a></p>
 </li>
 <li>
-<p>Virtual Machine Platform; required for <a href="https://learn.microsoft.com/en-us/windows/android/wsa/">Android subsystem or WSA (Windows subsystem for Android)</a>. If it's disabled, it will be automatically enabled either way when you try to install WSA from Store app</p>
+<p>Virtual Machine Platform: required for <a href="https://learn.microsoft.com/en-us/windows/android/wsa/">Android subsystem or WSA (Windows subsystem for Android)</a>. If it's disabled, it will be automatically enabled either way when you try to install WSA from Store app</p>
 </li>
 </ul>
 </li>
@@ -2478,7 +2484,7 @@ This is to prevent an <strong>Attacker with skill and lengthy physical access to
 <p>Change log history is present on GitHub. <em>(Despite some of my awkward documentation typos)</em></p>
 </li>
 <li>
-<p>You can open the file in <a href="https://code.visualstudio.com/">Visual Studio Code</a>/<a href="https://vscode.dev/">Visual Studio Code Web</a>, and view the module files in a nice easy to read environment, it's well formatted and indented.</p>
+<p>You can open the files in <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a> / <a href="https://vscode.dev/"><strong>Visual Studio Code Web</strong></a> / <a href="https://github.com/codespaces/new?skip_quickstart=true&amp;machine=standardLinux32gb&amp;repo=569233100&amp;ref=main&amp;geo=EuropeWest"><strong>GitHub CodeSpace</strong></a>, and view the module files in a nice easy to read environment, it's well formatted and indented.</p>
 </li>
 <li>
 <p>Commits are verified either with my GPG key or SSH key and <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits">Vigilant mode</a> is turned on in my GitHub account.</p>
@@ -2744,7 +2750,7 @@ This is to prevent an <strong>Attacker with skill and lengthy physical access to
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-10-10T17:18:58+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-10</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-10-13T08:21:27+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-10-13</span>
       
         <br>
         Created:
