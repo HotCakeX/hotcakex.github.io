@@ -25,6 +25,6 @@ This is how i can target a specific element in a specific light/dark theme
 }
 
 /* Making the navigation titles bold  */
-.md-tabs__link {    
+.md-tabs__link {
     font-weight: bold;
 }
