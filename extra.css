@@ -24,7 +24,93 @@ This is how i can target a specific element in a specific light/dark theme
     --md-default-bg-color: #0d1117;
 }
 
+
+
+
+
+
+
+
 /* Making the navigation titles bold  */
 .md-tabs__link {
     font-weight: bold;
+}
+
+
+
+
+
+
+/* This is CSS for top banner */
+.md-banner a {
+    color: #ef6eae;
+    transition: 0.25s;
+}
+
+.md-banner a:hover,
+.md-banner a:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+    border-color: #ff9bc7;
+    color: #ff9bc7;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #ff9bc7;
+    }
+}
+
+.md-banner a {
+    background: none;
+    /*   border: 2px solid; */
+    font: inherit;
+    /*    line-height: 1;*/
+    /*   margin: 0.5em; */
+    /*  padding: 1em 2em; */
+}
+
+
+
+
+
+/* For tooltips including inlines and standalone ones */
+.md-tooltip--active {
+    /* https://uigradients.com/#MoonlitAsteroid */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+    color: rgb(236, 236, 236);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Setting the header/banner color the same as the background color, which is the GitHub's dark background color */
+div .md-banner {
+    background-color: #0d1117;
+}
+
+
+
+
+
+
+
+
+
+
+/* Setting the footer color the same as the background color, which is the GitHub's dark background color */
+.md-container .md-footer .md-footer-meta {
+    background-color: #0d1117;
 }
