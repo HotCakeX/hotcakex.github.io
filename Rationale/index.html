@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../images/logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
@@ -1115,15 +1115,12 @@ or on
 <li>
 <p><a href="https://learn.microsoft.com/en-us/azure/security/fundamentals/services-technologies">List of all Azure security services for Enterprises, Businesses etc.</a></p>
 </li>
-<li>
-<p><a href="https://mootinc.com/"><strong>Moot Security Management</strong></a> - Automate your Security Fabric. All in a few seconds. Create Top Secure PAWs and more with the same products mentioned above, automatically, using 1st party solutions. <strong>Suitable for the most sensitive and important tasks.</strong></p>
-</li>
 </ul>
 <p><br></p>
 <h2 id="important-considerations"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/673731848341553152.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/673731848341553152.png" alt="head patting"></a> Important Considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Avoid using any 3rd party security solutions when using Harden Windows Security module or Windows Defender Application Control (<abbr title="Windows Defender Application Control">WDAC</abbr>). 3rd party solutions are weak, incompatible and unnecessary, they also increase your attack surface.</p>
+<p>Avoid using any 3rd party security solutions when using Harden Windows Security module or Windows Defender Application Control (<abbr title="Windows Defender Application Control">WDAC</abbr>). 3rd party solutions are weak, incompatible and unnecessary, <strong>they also increase your attack surface</strong>.</p>
 </li>
 <li>
 <p>Use Virtual machines for any questionable or unsafe software. Use <a href="https://github.com/HotCakeX/Privacy-Anonymity-Compartmentalization">Windows Sandbox or Hyper-V VM</a>. Also consider using Virtual machines or Microsoft Defender Application Guard (MDAG) for browsing on highly secure workstations.</p>
@@ -1202,20 +1199,18 @@ or on
 <h2 id="for-penetration-testing-and-benchmarking"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/david%20star.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/david%20star.gif" alt="icon for For Penetration testing and benchmarking section"></a> <a href="#-for-penetration-testing-and-benchmarking">For Penetration testing and benchmarking</a><a class="headerlink" href="#for-penetration-testing-and-benchmarking" title="Permanent link">&para;</a></h2>
 <p>How to properly perform a pentest and benchmark a system hardened by this repository and make it as close to the real-world scenario as possible:</p>
 <ol>
+<li>Use a physical machine if possible, it should have Windows 11 certified hardware, <a href="https://learn.microsoft.com/en-us/windows-server/remote/multipoint-services/create-a-standard-user-account">Standard user account</a>.</li>
 <li>
-<p>Use a physical machine if possible, it should have Windows 11 certified hardware, <a href="https://learn.microsoft.com/en-us/windows-server/remote/multipoint-services/create-a-standard-user-account">Standard user account</a>.</p>
-<ul>
-<li>If you can't use a physical machine, use Hyper-V hypervisor. Your host (aka physical machine) must have Windows 11 certified hardware and meet all the hardware and <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> security requirements explained in the Readme. VMs however are prone to side channel attacks, so don't use that attack vector in pentests if you want more realistic results.</li>
-</ul>
+<p>If you can't use a physical machine, use Hyper-V hypervisor. Your host (aka physical machine) must have Windows 11 certified hardware and meet all the hardware and <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> security requirements explained in the Readme. VMs however are prone to side channel attacks, so don't use that attack vector in pentests if you want more realistic results.</p>
 </li>
 <li>
-<p><strong>First apply the <a href="https://github.com/HotCakeX/Harden-Windows-Security">Harden Windows Security script</a> <em>(All categories of it)</em> and then use the <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDACConfig">WDACConfig module</a> to deploy a suitable <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/How-to-Create-and-Deploy-a-Signed-WDAC-Policy-Windows-Defender-Application-Control#system-behavior">Signed</a> <abbr title="Windows Defender Application Control">WDAC</abbr> policy.</strong></p>
+<p>First apply the <a href="https://github.com/HotCakeX/Harden-Windows-Security">Harden Windows Security module</a> <em>(All categories of it)</em> and then use the <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDACConfig">WDACConfig module</a> to deploy a suitable <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/How-to-Create-and-Deploy-a-Signed-WDAC-Policy-Windows-Defender-Application-Control#system-behavior">Signed</a> <abbr title="Windows Defender Application Control">WDAC</abbr> policy.</p>
 </li>
 </ol>
 <p><br></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>Always Pay attention to the <a href="https://www.microsoft.com/en-us/msrc/windows-security-servicing-criteria">Microsoft Security Servicing Criteria for Windows</a>, specially the Security boundaries.</strong> There is no security boundary between Administrator to Kernel.</p>
+<p>Always Pay attention to the <a href="https://www.microsoft.com/en-us/msrc/windows-security-servicing-criteria">Microsoft Security Servicing Criteria for Windows</a>, specially the Security boundaries. There is no security boundary between Administrator to Kernel.</p>
 <p>Some penetration testers overlook this fact, assuming it is a vulnerability that they can perform administrative tasks such as disabling security features as Administrator. This is an expected behavior. Administrators have the power to control the security of a device and can disable security features at their discretion. This is why you need to use a Standard user account when performing a realistic penetration test.</p>
 <p>Another aspect to consider is the ambiguity in the word "Admin". There are at least two distinct types of Admins: Local Admin and Cloud Admin. For instance, when you are penetration testing a system that leverages enterprise cloud security solution such as Microsoft Defender for Endpoint (MDE), Admin access should be regarded as Cloud Admin since those devices use Microsoft Entra ID and lack Local Admin. In this situation, Cloud Admin can effortlessly disable security features as expected, rendering a pentest using Local Admin access utterly pointless. Conversely, when pentesting a system that only relies on personal security features such as Microsoft Defender, then Admin should be treated as Local Admin. In this case, the Admin can also disable any security feature for the same reasons stated above.</p>
 <p>Of course, Microsoft employs additional security measures such as Protected Process Light (PPL) for Defense in Depth strategies, but they do not alter the facts stated above. <strong>The goal is to always hope for the best, plan for the worst.</strong></p>
@@ -1275,11 +1270,12 @@ or on
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"/></svg>
       
     </span>
     <nav>
       
+        <a href="mailto:not.committed.yet">Not Committed Yet</a>, 
         <a href="mailto:spynetgirl@outlook.com">Violet</a>
     </nav>
   </span>
