@@ -1019,7 +1019,7 @@ or on
 <li>Checking and Auditing the Compliance of the system with the hardening measures</li>
 <li>Removing the hardening measures described in the <a href="https://github.com/HotCakeX/Harden-Windows-Security">Readme</a></li>
 </ol>
-<p>Use Harden Windows Security module to secure your personal devices against the majority of advanced threats.</p>
+<p>Use the Harden Windows Security module to secure your personal devices against the majority of advanced threats.</p>
 <p>The module is suitable to be used by everyone, as long as your device is not managed, for example by a Domain Controller or as part of the <a href="https://www.microsoft.com/en-gb/security/business/microsoft-entra">Microsoft Entra ID</a>, because those devices are already controlled in different manners and different set of policies are applied to them.</p>
 <p>It uses the same security features built into your device and Windows operating system to fine-tune it towards the highest security and locked-down state.</p>
 <p><br></p>
@@ -1036,7 +1036,7 @@ or on
 <p>Full details, guides and videos available <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDACConfig">here on GitHub</a> and on <a href="https://spynetgirl.github.io/WDACConfig%20Module/WDACConfig/">my website.</a></p>
 <p><br></p>
 <h2 id="how-do-you-make-the-right-choice"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/350387930319028225.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/350387930319028225.png" alt="Microsoft Zune logo"></a> How Do You Make the Right Choice?<a class="headerlink" href="#how-do-you-make-the-right-choice" title="Permanent link">&para;</a></h2>
-<p>First use the Harden Windows Security Module to apply the hardening measures described in the Readme. After applying these hardening measures, your system will be secure against <strong>at least</strong> ~98% of the threats when you use Standard (non-Privileged) account for everyday work. These threats aren't the usual computer viruses, they are <strong><em>motivated nation state threat actors.</em></strong></p>
+<p>First use the Harden Windows Security Module to apply the hardening measures described in the Readme. After applying these hardening measures, your system will be secure against at least ~98% of the threats when you use Standard (non-Privileged) account for everyday work. These threats aren't the usual computer viruses, they are <strong><em>motivated nation state threat actors.</em></strong></p>
 <h3 id="if-you-want-even-more-security-and-control-you-have-at-least-2-more-options">If you want even more security and control, you have at least 2 more options:<a class="headerlink" href="#if-you-want-even-more-security-and-control-you-have-at-least-2-more-options" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -1046,14 +1046,14 @@ or on
 <p>Use <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDACConfig">WDACConfig module</a> to deploy a <abbr title="Windows Defender Application Control">WDAC</abbr> policy and have even more control over the operation of the Windows Defender Application Control.</p>
 </li>
 </ol>
-<p>These methods will create multiple layers of security; also known as defense in depth. Additionally, you can create <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDAC-policy-for-BYOVD-Kernel-mode-only-protection">Kernel-level Zero-Trust strategy</a> for your system.</p>
-<p>If there will ever be a zero-day vulnerability in one or even some of the security layers at the same time, there will still be enough layers left to protect your device. It's impossible to penetrate all of them.</p>
+<p>These methods will create multiple layers of security; also known as defense in depth. Additionally, you can create <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/WDAC-policy-for-BYOVD-Kernel-mode-only-protection"><strong>Kernel-level Zero-Trust strategy</strong></a> for your system.</p>
+<p>If there will ever be a zero-day vulnerability in one or even some of the security layers at the same time, there will still be enough layers left to protect your device. It's practically impossible to penetrate all of them at once.</p>
 <p>Also, zero-day vulnerabilities are patched quickly, so keeping your device and OS up to date, regardless of what OS you use, is one of the most basic security recommendations and best practices you must follow.</p>
 <p><br></p>
 <h2 id="vulnerabilities-such-as-zero-days-are-disclosed-in-3-different-ways"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/Account.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/PNGs/Account.png" alt="Microsoft Identity logo"></a> Vulnerabilities Such as Zero-Days Are Disclosed in 3 Different Ways<a class="headerlink" href="#vulnerabilities-such-as-zero-days-are-disclosed-in-3-different-ways" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>The vulnerability is disclosed responsibly. It is first communicated with the software developer and company privately so they can have the time to fix and issue updates/patches for the vulnerability before it is disclosed publicly. In this way, people are always safe because all that's needed is to keep your OS and software up to date to receive the latest security patches.</p>
+<p>The vulnerability is disclosed responsibly. It is first communicated privately with the software vendor/developer so they can have the time to fix and issue updates/patches for the vulnerability before it is disclosed publicly. In this way, people are always safe because all that's needed is to keep your OS and software up to date to receive the latest security patches.</p>
 </li>
 <li>
 <p>The vulnerability is disclosed irresponsibly. It is disclosed publicly, through social media or by creating <abbr title="Proof Of Concepts">PoCs</abbr> (Proof of Concept) so that it can be used and abused by everyone.</p>
@@ -1068,13 +1068,17 @@ or on
 
 <p><br></p>
 <p>To achieve the Highest level of Security <strong>at Scale</strong> for Businesses, Enterprises and Military scenarios, you can use the following services to create impenetrable devices and environments.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The following services must be used <strong>in addition</strong> to the measures already talked about in this repository, such as proper Application Control policies and the security measures that the Harden Windows Security module applies. They are not a replacement for them.</p>
 <p>As an individual user you can still utilize these features and services, they add an additional layer of protection to your security stack.</p>
+</div>
 <ul>
 <li>
 <p><a href="https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint">Microsoft Defender for Endpoint</a> - Discover and secure endpoint devices across your multiplatform enterprise.</p>
 </li>
 <li>
-<p><a href="https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot">Microsoft Security Copilot</a> - Build a defense <a href="https://learn.microsoft.com/en-us/security-copilot/microsoft-security-copilot">so automated</a> that even your intern becomes a cybersecurity expert.</p>
+<p><a href="https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-copilot-security">Microsoft Security Copilot</a> - Build a defense <a href="https://learn.microsoft.com/en-us/security-copilot/microsoft-security-copilot">so automated</a> that even your intern becomes a cybersecurity expert.</p>
 </li>
 <li>
 <p><a href="https://learn.microsoft.com/en-us/azure/confidential-computing/overview-azure-products">Confidential Computing on Azure</a> - Protect your highly sensitive data while it's in use</p>
@@ -1197,7 +1201,7 @@ or on
 </ul>
 <p><br></p>
 <h2 id="for-penetration-testing-and-benchmarking"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/david%20star.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="40" src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/david%20star.gif" alt="icon for For Penetration testing and benchmarking section"></a> <a href="#-for-penetration-testing-and-benchmarking">For Penetration testing and benchmarking</a><a class="headerlink" href="#for-penetration-testing-and-benchmarking" title="Permanent link">&para;</a></h2>
-<p>How to properly perform a pentest and benchmark a system hardened by this repository and make it as close to the real-world scenario as possible:</p>
+<p>How to properly perform a pentest and benchmark a system hardened by this repository and make it as close to a real-world scenario as possible:</p>
 <ol>
 <li>Use a physical machine if possible, it should have Windows 11 certified hardware, <a href="https://learn.microsoft.com/en-us/windows-server/remote/multipoint-services/create-a-standard-user-account">Standard user account</a>.</li>
 <li>
@@ -1250,7 +1254,7 @@ or on
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-04-04T00:50:43+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-04-05T10:46:55+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-05</span>
   </span>
 
     
