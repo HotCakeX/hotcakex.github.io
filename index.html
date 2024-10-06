@@ -646,6 +646,15 @@ or on
 </li>
       
         <li class="md-nav__item">
+  <a href="#device-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Guard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tls-security" class="md-nav__link">
     <span class="md-ellipsis">
       TLS Security
@@ -1157,6 +1166,15 @@ or on
 </li>
       
         <li class="md-nav__item">
+  <a href="#device-guard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Guard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tls-security" class="md-nav__link">
     <span class="md-ellipsis">
       TLS Security
@@ -1607,6 +1625,7 @@ From Top to bottom in order:</p>
 <li><a href="#microsoft-defender">Microsoft Defender</a></li>
 <li><a href="#attack-surface-reduction-rules">Attack surface reduction rules</a></li>
 <li><a href="#bitlocker-settings">Bitlocker Settings</a></li>
+<li><a href="#device-guard">Device Guard</a></li>
 <li><a href="#tls-security"><abbr title="Transport Layer Security">TLS</abbr> Security</a></li>
 <li><a href="#lock-screen">Lock Screen</a></li>
 <li><a href="#user-account-control">UAC (User Account Control)</a></li>
@@ -2098,6 +2117,138 @@ From Top to bottom in order:</p>
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
 <p><br></p>
+<h2 id="device-guard">Device Guard<a href="#device-guard"><img alt="DeviceGuardIcon" src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/DeviceGuard.png" /></a><a class="headerlink" href="#device-guard" title="Permanent link">&para;</a></h2>
+<p align="center"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Readme%20Categories/Device%20Guard/Device%20Guard.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Readme%20Categories/Device%20Guard/Device%20Guard.png" alt="Device Guard Category - Harden Windows Security GitHub repository" width="600"></a></p>
+
+<ul>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity">Virtualization-Based Security + <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> Lock</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deviceguard?WT.mc_id=Portal-fx#enablevirtualizationbasedsecurity">CSP</a></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity#validate-enabled-vbs-and-memory-integrity-features">Validate enabled Windows Defender Device Guard hardware-based security features</a></li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt">Secure boot (without requiring DMA protection) for Virtualization-Based Security</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deviceguard?WT.mc_id=Portal-fx#requireplatformsecurityfeatures">CSP</a></p>
+<ul>
+<li>
+<p>This is in accordance with <a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity#use-registry-keys-to-enable-memory-integrity">Microsoft's recommendation</a>. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.</p>
+</li>
+<li>
+<p>Secure boot has 2 parts, part 1 is enforced using the Group Policy by this module, but for part 2, you need to <a href="https://support.microsoft.com/en-us/windows/windows-11-and-secure-boot-a8ff1202-c0d9-42f5-940f-843abef64fad">enable Secure Boot in your <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> firmware settings</a> <strong>if</strong> it's not enabled by default (which is the case on older hardware).</p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-kernel-dma-protection">(Kernel) DMA protection hardware requirements</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Virtualization-based protection of Code Integrity + <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> Lock <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-VirtualizationBasedTechnology?WT.mc_id=Portal-fx#hypervisorenforcedcodeintegrity">CSP</a></li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs">Require <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> Memory Attributes Table (MAT)</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-VirtualizationBasedTechnology?WT.mc_id=Portal-fx#requireuefimemoryattributestable">CSP</a></li>
+</ul>
+<p><br></p>
+<ul>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-virtualization-based-security-and-windows-defender-credential-guard">Windows Defender Credential Guard + <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> Lock</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deviceguard?WT.mc_id=Portal-fx#lsacfgflags">CSP</a></p>
+<ul>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/dg-readiness-tool">Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool</a></p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-requirements">Windows Defender Credential Guard requirements</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/system-guard-secure-launch-and-smm-protection#group-policy">System Guard Secure Launch and SMM protection (Firmware Protection)</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deviceguard?WT.mc_id=Portal-fx#configuresystemguardlaunch">CSP</a></p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/system-guard-secure-launch-and-smm-protection#how-to-verify-system-guard-secure-launch-is-configured-and-running">How to verify System Guard Secure Launch is configured and running</a></li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520">Kernel Mode Hardware Enforced Stack Protection</a></li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection">Local Security Authority</a> (LSA) process Protection + <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> Lock <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-lsa#configurelsaprotectedprocess">CSP</a></li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables <strong>Machine Identity Isolation Configuration</strong> in Enforcement mode.</li>
+</ul>
+<p><br></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Most of the Device Guard and Virtualization-Based Security features are Automatically enabled by default</strong> on capable and modern hardware. The rest of them will be enabled and configured to the most secure state after you apply the Microsoft Security Baselines and the Harden Windows Security policies.</p>
+<ul>
+<li>
+<p><a href="https://www.microsoft.com/en-us/windows/business/windows-11-secured-core-computers"><strong>Check out Secured-Core PC requirements</strong></a>.</p>
+</li>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-hvci-enablement">Memory integrity and VBS enablement</a></p>
+</li>
+</ul>
+</div>
+<p><br></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>About <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> Lock</strong></p>
+<p><abbr title="Unified Extensible Firmware Interface">UEFI</abbr> locked security measures are rooted in <strong>Proof of Physical Presence</strong> and they can't be disabled by modifying Group Policy, registry keys or other Administrative tasks.
+The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> locked security measures is to have physical access to the computer, reboot and access the <abbr title="Unified Extensible Firmware Interface">UEFI</abbr> settings, supply the credentials to access the <abbr title="Unified Extensible Firmware Interface">UEFI</abbr>, turn off Secure Boot, reboot the system and then you will be able to disable those security measures with Administrator privileges.</p>
+</div>
+<p><br></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong><a href="https://support.microsoft.com/en-us/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2">Device Protection in Windows Security Gives You One of These 4 Hardware Scores</a></strong></p>
+<p><ol>
+<li>Standard hardware security not supported</li>
+<ul>
+<li>This means that your device does not meet at least one of the requirements of Standard Hardware Security.</li>
+</ul>
+<br>
+<li>Your device meets the requirements for Standard Hardware Security. </li>
+<ul>
+<li><a href="https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee"><abbr title="Trusted Platform Module">TPM</abbr> 2.0</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot">Secure boot</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/memory/data-execution-prevention"><abbr title="Data Execution Prevention">DEP</abbr></a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/bringup/unified-extensible-firmware-interface"><abbr title="Unified Extensible Firmware Interface">UEFI</abbr> MAT</a></li>
+</ul>
+<br>
+<li>Your device meets the requirements for Enhanced Hardware Security</li>
+<ul>
+<li><a href="https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee"><abbr title="Trusted Platform Module">TPM</abbr> 2.0</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot">Secure boot</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/memory/data-execution-prevention"><abbr title="Data Execution Prevention">DEP</abbr></a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/bringup/unified-extensible-firmware-interface"><abbr title="Unified Extensible Firmware Interface">UEFI</abbr> MAT</a></li>
+<li><a href="https://support.microsoft.com/en-us/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78">Memory Integrity</a></li>
+</ul>
+<br>
+<li>Your device has all Secured-core PC features enabled</li>
+<ul>
+<li><a href="https://support.microsoft.com/en-us/topic/what-is-tpm-705f241d-025d-4470-80c5-4feeb24fa1ee"><abbr title="Trusted Platform Module">TPM</abbr> 2.0</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot">Secure boot</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/memory/data-execution-prevention"><abbr title="Data Execution Prevention">DEP</abbr></a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/bringup/unified-extensible-firmware-interface"><abbr title="Unified Extensible Firmware Interface">UEFI</abbr> MAT</a></li>
+<li><a href="https://support.microsoft.com/en-us/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78">Memory Integrity</a></li>
+<li><a href="https://www.microsoft.com/en-us/security/blog/2020/11/12/system-management-mode-deep-dive-how-smm-isolation-hardens-the-platform/">System Management Mode (SMM)</a></li>
+</ul>
+</ol></p>
+</div>
+<p><br></p>
+<p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
+<p><br></p>
 <h2 id="tls-security"><abbr title="Transport Layer Security">TLS</abbr> Security<a href="#tls-security"><img alt="TLSIcon" src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/TLS.png" /></a><a class="headerlink" href="#tls-security" title="Permanent link">&para;</a></h2>
 <p align="center"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/0180bc6ace1ea086653cc405f142d1aada424150/Pictures/Readme%20Categories/TLS%20Security/TLS%20Security.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/0180bc6ace1ea086653cc405f142d1aada424150/Pictures/Readme%20Categories/TLS%20Security/TLS%20Security.svg" alt="TLS Security - Harden Windows Security repository GitHub" width="550"></a></p>
 
@@ -2423,6 +2574,26 @@ From Top to bottom in order:</p>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Clears all the entries in <a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-remotely-accessible-registry-paths-and-subpaths">Remotely accessible registry paths and subpaths</a>.</li>
 </ul>
 <p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Sets the minimum required SMB version for <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/manage-smb-dialects?tabs=group-policy#smb-client"><strong>Client</strong></a> to <code>3.1.1</code> which is the latest available version at the moment and was introduced years ago with Windows 10.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Sets the minimum required SMB version for <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/manage-smb-dialects?tabs=group-policy#smb-server"><strong>Server</strong></a> to <code>3.1.1</code> which is the latest available version at the moment and was introduced years ago with Windows 10.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-ntlm-blocking-now-supported-in-windows-insider/ba-p/3916206">Blocks NTLM</a> completely for SMB.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/configure-smb-client-require-encryption">Requires encryption</a> for SMB client/workstation.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-security">Enables encryption</a> for SMB Server. Its status can be checked using the following PowerShell command: <code>(get-SmbServerConfiguration).EncryptData</code>. If the returned value is <code>$True</code> then SMB Encryption is turned on.</li>
+</ul>
+<p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
 <p><br></p>
 <h2 id="miscellaneous-configurations">Miscellaneous Configurations<a href="#miscellaneous-configurations"><img alt="MiscellaneousIcon" src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/MiscellaneousCommands.png" /></a><a class="headerlink" href="#miscellaneous-configurations" title="Permanent link">&para;</a></h2>
@@ -2464,10 +2635,6 @@ From Top to bottom in order:</p>
 <p><br></p>
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables <a href="https://techcommunity.microsoft.com/t5/storage-at-microsoft/configure-smb-signing-with-confidence/ba-p/2418102">SMB/LDAP Signing</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-LocalPoliciesSecurityOptions?WT.mc_id=Portal-fx#microsoftnetworkclient_digitallysigncommunicationsalways">CSP</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-LocalPoliciesSecurityOptions?WT.mc_id=Portal-fx#microsoftnetworkserver_digitallysigncommunicationsalways">CSP</a></li>
-</ul>
-<p><br></p>
-<ul>
-<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> Enables <a href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-security">SMB Encryption</a>. Its status can be checked using the following PowerShell command: <code>(get-SmbServerConfiguration).EncryptData</code>. If the returned value is <code>$True</code> then SMB Encryption is turned on.</li>
 </ul>
 <p><br></p>
 <ul>
@@ -2926,7 +3093,7 @@ From Top to bottom in order:</p>
 <p>Do not assume that the entire Open Source community audits and verifies every line of code just because the source code is available, as we've seen in the <a href="https://techcommunity.microsoft.com/t5/microsoft-defender-vulnerability/microsoft-faq-and-guidance-for-xz-utils-backdoor/ba-p/4101961">XZ utility's backdoor</a> by state sponsored actors, they can have backdoors implanted in them in broad daylight and nobody might notice it for a long time.</p>
 </li>
 <li>
-<p>The majority of <em>open source</em> programs are unsigned, meaning they don't have a digital signature, their developers haven't bought and used a code signing certificate to sign their program. Among other problems, this might pose a danger to the end-users by making it harder to create trust for those programs in security solutions such as Application Control or App Whitelisting, and makes it hard to authenticate them. <a href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85)">Read Microsoft's Introduction to Code Signing</a>.</p>
+<p>The majority of <em>open source</em> programs are unsigned, meaning they don't have a digital signature, their developers haven't bought and used a code signing certificate to sign their program. Among other problems, this might pose a danger to the end-users by making it harder to create trust for those programs in security solutions such as Application Control or App Whitelisting, and makes it hard to authenticate them. <a href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85)">Read Microsoft's Introduction to Code Signing</a>. Use <a href="https://azure.microsoft.com/en-us/products/trusted-signing">Azure Trusted Signing</a> which is <a href="https://azure.microsoft.com/en-us/pricing/details/trusted-signing/">affordable</a>.</p>
 </li>
 </ul>
 </li>
@@ -3087,7 +3254,7 @@ From Top to bottom in order:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-04T17:49:18+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-06T05:05:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-06</span>
   </span>
 
     
