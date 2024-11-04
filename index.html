@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
@@ -2078,7 +2078,7 @@ From Top to bottom in order:</p>
 <p><br></p>
 <ul>
 <li>
-<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables or disables <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures#protecting-thunderbolt-and-other-dma-ports">DMA protection from Bitlocker Countermeasures</a> based <a href="https://github.com/MicrosoftDocs/windows-itpro-docs/issues/6878#issuecomment-742429128">on the status</a> of <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt">Kernel DMA protection</a>. Kernel DMA Protection is <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#system-compatibility">not compatible</a> with other BitLocker DMA attacks countermeasures. It is recommended to disable the BitLocker DMA attacks countermeasures if the system supports Kernel DMA Protection (this module does that exactly). Kernel DMA Protection provides higher security bar for the system over the BitLocker DMA attack countermeasures, while maintaining usability of external peripherals. you can check the status of Kernel DMA protection <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#how-to-check-if-kernel-dma-protection-is-enabled">using this official guide</a>. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-dataprotection#allowdirectmemoryaccess">CSP</a></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables or disables <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures#protecting-thunderbolt-and-other-dma-ports">DMA protection from Bitlocker Countermeasures</a> based on the status of <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt">Kernel DMA protection</a>. Kernel DMA Protection is <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#system-compatibility">not compatible</a> with other BitLocker DMA attacks countermeasures. It is recommended to disable the BitLocker DMA attacks countermeasures if the system supports Kernel DMA Protection (this module does that exactly). Kernel DMA Protection provides higher security bar for the system over the BitLocker DMA attack countermeasures, while maintaining usability of external peripherals. you can check the status of Kernel DMA protection <a href="https://learn.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#how-to-check-if-kernel-dma-protection-is-enabled">using this official guide</a>. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-dataprotection#allowdirectmemoryaccess">CSP</a></p>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-kernel-dma-protection">Kernel DMA Protection (Memory Access Protection) for <abbr title="Original Equipment Manufacturers">OEMs</abbr></a> page shows the requirements for Kernel DMA Protection. for Intel CPUs, support for requirements such as VT-X and VT-D can be found in each CPU's respective product page. e.g. <a href="https://ark.intel.com/content/www/us/en/ark/products/230500/intel-core-i713700k-processor-30m-cache-up-to-5-40-ghz.html">Intel i7 13700K</a></li>
 </ul>
@@ -2189,6 +2189,15 @@ From Top to bottom in order:</p>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Enables <strong>Machine Identity Isolation Configuration</strong> in Enforcement mode.</li>
 </ul>
 <p><br></p>
+<ul>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Enables Virtualization-based Security and Memory Integrity in <a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity?tabs=reg">Mandatory mode</a>.</p>
+</li>
+<li>
+<p>Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.</p>
+</li>
+</ul>
+<p><br></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Most of the Device Guard and Virtualization-Based Security features are Automatically enabled by default</strong> on capable and modern hardware. The rest of them will be enabled and configured to the most secure state after you apply the Microsoft Security Baselines and the Harden Windows Security policies.</p>
@@ -2257,7 +2266,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p>If you want to read more: <a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/demystifying-schannel/ba-p/259233">Demystifying Schannel</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The only <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38">known</a> program incompatible with this category is Battle.net game client.</p>
+<p>This category checks whether Battle.net client is installed on the system and if it is then includes  <code>TLS_RSA_WITH_AES_256_CBC_SHA</code> as an additional cipher suite in the policy due to <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38">a known issue</a>. The way Battle.net client is detected is by checking the presence of <code>Battle.net.exe</code> or <code>Battle.net Launcher.exe</code> in <code>C:\Program Files (x86)\Battle.net\</code> folder.</p>
 </div>
 <p><br></p>
 <ul>
@@ -2386,9 +2395,9 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 </li>
 <li>
 <p><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#usertenantidpoliciespincomplexityexpiration">Expires</a> <strong>every 180 days</strong> (default behavior is to never expire) <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciespincomplexityexpiration">CSP</a></p>
-<ul>
-<li>Setting an expiration date ensures that, in the event of theft, a threat actor cannot indefinitely attempt to guess the PIN. After 180 days, the PIN expires, rendering it unusable even if guessed correctly. To reset the PIN, authentication via a Microsoft account or EntraID—likely inaccessible to the attacker—will be required. Combined with anti-hammering and BitLocker policies, this expiration guarantees that a threat actor cannot endlessly persist in guessing the PIN.</li>
-</ul>
+</li>
+<li>
+<p>Setting an expiration date ensures that, in the event of theft, a threat actor cannot indefinitely attempt to guess the PIN. After 180 days, the PIN expires, rendering it unusable even if guessed correctly. To reset the PIN, authentication via a Microsoft account or EntraID—likely inaccessible to the attacker—will be required. Combined with anti-hammering and BitLocker policies, this expiration guarantees that a threat actor cannot endlessly persist in guessing the PIN.</p>
 </li>
 <li>
 <p><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#usertenantidpoliciespincomplexityhistory">History</a> of the <strong>1</strong> most recent selected PIN is preserved to prevent the user from reusing it <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciespincomplexityhistory">CSP</a></p>
@@ -2446,6 +2455,10 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <h2 id="windows-firewall">Windows Firewall<a href="#windows-firewall"><img alt="FirewallIcon" src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Firewall.png" /></a><a class="headerlink" href="#windows-firewall" title="Permanent link">&para;</a></h2>
 <p align="center"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/d6960a261913f979526c0fac7901effa4b72d813/Pictures/Readme%20Categories/Windows%20Firewall/Windows%20Firewall.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/d6960a261913f979526c0fac7901effa4b72d813/Pictures/Readme%20Categories/Windows%20Firewall/Windows%20Firewall.svg" alt="Windows Firewall - Harden Windows Security GitHub repository" width="500"></a></p>
 
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> Sets the Network Location of all connections to Public; <a href="https://support.microsoft.com/en-us/windows/make-a-wi-fi-network-public-or-private-in-windows-0460117d-8d3e-a7ac-f003-7a0da607448d">Public network means less trust to other network devices</a>.</li>
+</ul>
 <p><br></p>
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Makes sure Windows Firewall is enabled for all profiles (which is the default) <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/firewall-csp#mdmstorepublicprofileenablefirewall">CSP</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/firewall-csp#mdmstoreprivateprofileenablefirewall">CSP</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/firewall-csp#mdmstoredomainprofileenablefirewall">CSP</a></li>
@@ -2515,10 +2528,10 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p>WordPad: Old and <a href="https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features">deprecated</a>. None of the new features of Word documents are supported in it. Recommended to use <a href="https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web">Word Online</a>, Notepad or M365 Word.</p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise">PowerShell ISE</a>: Old PowerShell environment that doesn't support versions above 5.1. Highly recommended to use <a href="https://apps.microsoft.com/detail/visual-studio-code/XP9KHM4BK9FZ7Q">Visual Studio Code</a> for PowerShell usage and <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki#-powershell">learning</a>. You can even replicate the <a href="https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/how-to-replicate-the-ise-experience-in-vscode">ISE experience in Visual Studio Code</a>. You can access <a href="https://vscode.dev/">Visual Studio Code online in your browser</a> without the need to install anything.</p>
+<p><a href="https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise">PowerShell ISE</a>: Old PowerShell environment that doesn't support versions above 5.1. Highly recommended to use <a href="https://apps.microsoft.com/detail/xp9khm4bk9fz7q">Visual Studio Code</a> for PowerShell usage and <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki#-powershell">learning</a>. You can even replicate the <a href="https://learn.microsoft.com/en-us/powershell/scripting/dev-cross-plat/vscode/how-to-replicate-the-ise-experience-in-vscode">ISE experience in Visual Studio Code</a>. You can access <a href="https://vscode.dev">Visual Studio Code online in your browser</a> without the need to install anything.</p>
 </li>
 <li>
-<p>Steps Recorder: it's <a href="https://prod.support.services.microsoft.com/en-us/windows/steps-recorder-deprecation-a64888d7-8482-4965-8ce3-25fb004e975f">deprecated</a>.</p>
+<p>Steps Recorder: it's <a href="https://support.microsoft.com/en-us/windows/steps-recorder-deprecation-a64888d7-8482-4965-8ce3-25fb004e975f">deprecated</a>.</p>
 </li>
 </ul>
 </li>
@@ -2554,10 +2567,6 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p><br></p>
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> Disables <a href="https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-nbte/bec3913a-c359-4e6f-8c7e-40c2f43f546b#gt_5f0744c1-5105-4e4a-b71c-b9c7ecaed910">LMHOSTS lookup protocol</a> on all network adapters, legacy feature that's not used anymore.</li>
-</ul>
-<p><br></p>
-<ul>
-<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> Sets the Network Location of all connections to Public; <a href="https://support.microsoft.com/en-us/windows/make-a-wi-fi-network-public-or-private-in-windows-0460117d-8d3e-a7ac-f003-7a0da607448d">Public network means less trust to other network devices</a>.</li>
 </ul>
 <p><br></p>
 <ul>
@@ -2726,6 +2735,18 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Enables <a href="https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645">Windows Protected Print</a>. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-printers#configurewindowsprotectedprint">CSP</a></li>
 </ul>
 <p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> Configures the <a href="https://learn.microsoft.com/en-us/windows-server/administration/OpenSSH/openssh-server-configuration#openssh-configuration-files"><abbr title="Secure Shell">SSH</abbr> client's configurations</a> to use the following secure MACs (Message Authentication Codes): <code>MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com</code>.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Enables support for <a href="https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation">long paths</a>.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> <a href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/system-cryptography-force-strong-key-protection-for-user-keys-stored-on-the-computer">Force strong key protection</a> for user keys stored on the computer.</li>
+</ul>
+<p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
 <p><br></p>
 <h2 id="windows-update-configurations">Windows Update Configurations<a href="#windows-update-configurations"><img alt="WindowsUpdate" src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/WindowsUpdate.png" /></a><a class="headerlink" href="#windows-update-configurations" title="Permanent link">&para;</a></h2>
@@ -2847,7 +2868,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <li><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security">Microsoft Edge Security updates change log</a></li>
 <li><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel">Microsoft Edge Beta channel change log</a></li>
 <li><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-mobile-stable-channel">Microsoft Edge Mobile stable channel change log</a></li>
-<li><a href="https://www.microsoftedgeinsider.com/en-us/">Edge Insider for Beta/Dev/Canary channels</a></li>
+<li><a href="https://www.microsoft.com/en-us/edge/download/insider">Edge Insider for Beta/Dev/Canary channels</a></li>
 <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=55319">Microsoft Edge Security baselines</a> - Work without ingesting <a href="https://www.microsoft.com/en-us/edge/business/download">ADMX policy files</a> first<ul>
 <li><a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/50">Reason why the module doesn't use it.</a></li>
 </ul>
@@ -2893,7 +2914,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <li>mshta.exe</li>
 <li>cscript.exe</li>
 </ul>
-<p>They are insecure, unsandboxed script hosts that pose a security risk. You can <a href="https://textslashplain.com/2024/05/20/attack-techniques-full-trust-script-downloads/">read more about them in here</a> which is a blog post by Eric Lawrence from Microsoft.</p>
+<p>They are <a href="https://textslashplain.com/2024/05/20/attack-techniques-full-trust-script-downloads/">insecure</a>, unsandboxed script hosts that pose a security risk.</p>
 <p><br></p>
 <p>All of the policies can be easily removed using the <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Harden%E2%80%90Windows%E2%80%90Security%E2%80%90Module#unprotect-windowssecurity-cmdlet"><strong>Unprotect-WindowsSecurity</strong></a> or <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Remove-WDACConfig"><strong>Remove-WDACConfig</strong></a> cmdlets.</p>
 <p><br></p>
@@ -2959,25 +2980,25 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p align="center"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/56885df17213aecaa07453e008972a5b8dc918e5/Pictures/Readme%20Categories/Trust/Trust.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/56885df17213aecaa07453e008972a5b8dc918e5/Pictures/Readme%20Categories/Trust/Trust.svg" alt="Trust The Harden Windows Security GitHub Repository" width="500"></a></p>
 
 <h3 id="how-can-you-100-trust-this-repository-and-know-that-nothing-shady-is-going-on">How can you 100% trust this repository and know that nothing shady is going on?<a class="headerlink" href="#how-can-you-100-trust-this-repository-and-know-that-nothing-shady-is-going-on" title="Permanent link">&para;</a></h3>
-<p>This repository uses the simplest possible, yet effective, methods that make it very easy to verify:</p>
+<p>This repository uses effective methods that make it easy to verify:</p>
 <ul>
 <li>
 <p>Change log history is present on GitHub. <em>(Despite some of my awkward documentation typos)</em></p>
 </li>
 <li>
-<p>You can open the files in <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a> / <a href="https://vscode.dev/"><strong>Visual Studio Code Web</strong></a> / <a href="https://github.com/codespaces/new?skip_quickstart=true&amp;machine=standardLinux32gb&amp;repo=569233100&amp;ref=main&amp;geo=EuropeWest"><strong>GitHub CodeSpace</strong></a>, and view the module files in a nice easy to read environment, it's well formatted and indented.</p>
+<p><a href="https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds">Artifact attestations</a> are used to establish provenance for builds. It <a href="https://github.com/HotCakeX/Harden-Windows-Security/attestations">guarantees</a> that the package(s) you download from this repository are 100% created from the source code that exist in this repository.</p>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository">SBOMs</a> (Software Bill of Materials) are generated for the entire repository to comply with data protection standards and providing transparency. Together with attestation they provide <a href="https://slsa.dev/spec/v1.0/levels">SLSA L2 security level</a> for the build process. In the future, the workflows will be upgraded to comply with SLSA L3 level.</p>
+</li>
+<li>
+<p>You can open the files in <a href="https://code.visualstudio.com"><strong>Visual Studio Code</strong></a> / <a href="https://vscode.dev"><strong>Visual Studio Code Web</strong></a> / <a href="https://github.com/codespaces/new?skip_quickstart=true&amp;machine=standardLinux32gb&amp;repo=569233100&amp;ref=main&amp;geo=EuropeWest"><strong>GitHub CodeSpace</strong></a>, and view them in a nice and easy to read environment, they are well formatted, commented and indented.</p>
 </li>
 <li>
 <p>Commits are verified either with my <abbr title="GNU Privacy Guard">GPG</abbr> key or <abbr title="Secure Shell">SSH</abbr> key and <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits">Vigilant mode</a> is turned on in my GitHub account.</p>
 </li>
 <li>
 <p>You can fork this repository, verify it until that point in time, then verify any subsequent changes/updates I push to this repository, <strong>at your own pace</strong> (using <code>Sync fork</code> and <code>Compare</code> options on your fork), and if you are happy with the changes, allow it to be merged with your own copy/fork on your GitHub account.</p>
-</li>
-<li>
-<p>You can <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Basic-PowerShell-tricks-and-notes">learn PowerShell which is super easy</a>, multiplatform, and useful for the future, Microsoft Learn website teaches you everything, then you will understand everything in the module is safe, or you can ask someone that you trust and knows PowerShell to verify the module for you.</p>
-</li>
-<li>
-<p>All codes are properly commented for easy and quick understanding.</p>
 </li>
 <li>
 <h4 id="explanations-for-some-of-the-files-used-by-the-harden-windows-security-module-ask-about-any-other-files-if-you-have-questions-they-are-all-in-clear-text">Explanations for some of the files used by the Harden Windows Security module, ask about any other file(s) if you have questions, they are all in clear text.<a class="headerlink" href="#explanations-for-some-of-the-files-used-by-the-harden-windows-security-module-ask-about-any-other-files-if-you-have-questions-they-are-all-in-clear-text" title="Permanent link">&para;</a></h4>
@@ -3012,9 +3033,18 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>All files in this repository, including packages like MSIX files attached to releases, are zipped and automatically submitted to VirusTotal for scanning through a <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/VirusTotal.yml">GitHub Action</a>. Find the history of the uploaded files in <a href="https://www.virustotal.com/gui/user/SpyNetGirl">my Virus Total profile</a>.</p>
+<p>All files in this repository are zipped and automatically submitted to VirusTotal for scanning. Any available packages in the last release is also directly uploaded for scanning. It is done through a <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/VirusTotal.yml">GitHub Action</a> that is triggered every time a release is made or a PR is merged. Find the history of the uploaded files in <a href="https://www.virustotal.com/gui/user/SpyNetGirl">my Virus Total profile</a>.</p>
 </div>
-<p><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/powershell.yml"><img alt="PSScriptAnalyzer" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/powershell.yml/badge.svg" /></a> <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/VirusTotal.yml"><img alt="Repository And Package Scan on Virus Total" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/VirusTotal.yml/badge.svg" /></a> <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/codeql.yml"><img alt="CodeQL Advanced" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/codeql.yml/badge.svg" /></a> <a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Sync%20to%20Azure%20DevOps.yaml"><img alt="Sync to Azure DevOps" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Sync%20to%20Azure%20DevOps.yaml/badge.svg" /></a> </p>
+<ul>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/PSScriptAnalyzer.yml"><img alt="PSScriptAnalyzer" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/PSScriptAnalyzer.yml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Repository%20And%20Package%20Scan%20on%20Virus%20Total.yml"><img alt="Repository And Package Scan on Virus Total" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Repository%20And%20Package%20Scan%20on%20Virus%20Total.yml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/CodeQL%20Advanced%20-%20Security.yml"><img alt="CodeQL Advanced - Security" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/CodeQL%20Advanced%20-%20Security.yml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/CodeQL%20Advanced%20-%20Quality.yml"><img alt="CodeQL Advanced - Quality" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/CodeQL%20Advanced%20-%20Quality.yml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Sync%20to%20Azure%20DevOps.yaml"><img alt="Sync to Azure DevOps" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Sync%20to%20Azure%20DevOps.yaml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Build%20AppControl%20Manager%20MSIX%20Package.yml"><img alt="Build AppControl Manager MSIX Package" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Build%20AppControl%20Manager%20MSIX%20Package.yml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/dependabot/dependabot-updates"><img alt="Dependabot Updates" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/dependabot/dependabot-updates/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Markdown%20Link%20Validator.yml"><img alt="Markdown Link Validator" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Markdown%20Link%20Validator.yml/badge.svg" /></a></li>
+</ul>
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
 <p><br></p>
@@ -3079,7 +3109,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p><br></p>
 <ul>
 <li>
-<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"></a> When considering the use of a VPN, it is crucial to exercise discernment and only resort to it when absolutely necessary. A VPN can be a vital tool if you reside in a totalitarian, communist, or dictatorial regime, or in a nation where democratic principles are not upheld. However, if you live in a country that does not fall into these categories, it may be wise to reconsider the necessity of using a VPN. Your local ISP (Internet Service Provider) is likely more trustworthy than the ISP associated with a remote VPN server. By using a VPN, you are merely transferring the trust you place in your local ISP to an unknown entity—the ISP utilized by the VPN provider. It is important not to be swayed by the deceptive marketing tactics employed by VPN companies. The true identities, political affiliations, backgrounds, and loyalties of those behind these services often remain shrouded in mystery. In the permissive and open societies of the Western world, it is conceivable that <a href="https://www.techradar.com/news/iran-officials-linked-to-canada-based-free-vpn-provider">a VPN service could be established</a> by entities with questionable intentions, including <a href="https://twitter.com/lisa_loo_who/status/1567984903312257025">state sponsors of terrorism</a> or other hostile actors. Such services could be utilized <a href="https://archive.ph/xOVeY">to gather intelligence</a>, conduct data mining, and track users, posing significant risks to your privacy and security.</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"></a> When considering the use of a VPN, it is crucial to exercise discernment and only resort to it when absolutely necessary. A VPN can be a vital tool if you reside in a totalitarian, communist, or dictatorial regime, or in a nation where democratic principles are not upheld. However, if you live in a country that does not fall into these categories, it may be wise to reconsider the necessity of using a VPN. Your local ISP (Internet Service Provider) is likely more trustworthy than the ISP associated with a remote VPN server. By using a VPN, you are merely transferring the trust you place in your local ISP to an unknown entity—the ISP utilized by the VPN provider. It is important not to be swayed by the deceptive marketing tactics employed by VPN companies. The true identities, political affiliations, backgrounds, and loyalties of those behind these services often remain shrouded in mystery. In the permissive and open societies of the Western world, it is conceivable that <a href="https://www.techradar.com/news/iran-officials-linked-to-canada-based-free-vpn-provider">a VPN service could be established</a> by entities with questionable intentions, including <a href="https://x.com/lisa_loo_who/status/1567984903312257025">state sponsors of terrorism</a> or other hostile actors. Such services could be utilized <a href="https://archive.ph/xOVeY">to gather intelligence</a>, conduct data mining, and track users, posing significant risks to your privacy and security.</p>
 <ul>
 <li>There are situations where using VPN can provide security and privacy. For example, when using a public WiFi hotspot or basically any network that you don't have control over. In such cases, use <a href="https://cloudflarewarp.com/">Cloudflare WARP</a> which <a href="https://developers.cloudflare.com/warp-client/get-started/windows">uses WireGuard protocol</a>, <em>or as mentioned, use <a href="https://blog.cloudflare.com/cloudflare-now-powering-microsoft-edge-secure-network/">Secure Network in Edge browser that utilizes the same secure Cloudflare network</a></em>. It's free, it's from an American company that <a href="https://radar.cloudflare.com/">has global radar</a> and lots of insight about countries in the world in real-time, <a href="https://blog.cloudflare.com/application-security/">at least 19.7% of all websites use it (2022)</a>. Safe to say it's one of the <strong>backbones of the Internet.</strong></li>
 </ul>
@@ -3155,7 +3185,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 </li>
 <li><a href="https://techcommunity.microsoft.com/">Microsoft Tech Community</a> - Official blogs and documentations</li>
 <li><a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines">Microsoft Security baselines</a> - Security baselines from Microsoft</li>
-<li><a href="https://www.youtube.com/@microsoftsecurityresponsec2390">Microsoft Security Response Center (MSRC) YouTube channel</a><ul>
+<li><a href="https://www.youtube.com/@msftsecresponse">Microsoft Security Response Center (MSRC) YouTube channel</a><ul>
 <li><a href="https://www.youtube.com/watch?v=quLa6kzzra0">BlueHat Seattle 2019 || Guarding Against Physical Attacks: The Xbox One Story</a></li>
 <li><a href="https://msrc.microsoft.com/update-guide">Security Update Guide:</a> The Microsoft Security Response Center (MSRC) investigates all reports of security vulnerabilities affecting Microsoft products and services, and provides the information here as part of the ongoing effort to help you manage security risks and help keep your systems protected.</li>
 <li><a href="https://msrc-blog.microsoft.com/">Microsoft Security Response Center Blog</a></li>
@@ -3193,13 +3223,11 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 </li>
 <li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/virus-initiative-criteria">Microsoft Virus Initiative</a></li>
 <li><a href="https://news.microsoft.com/stories/cybercrime/">Digital Detectives @Microsoft</a></li>
-<li><a href="https://www.goblinloot.net/">Goblin Loot - Great security related website about EDR, Cloud and Microsoft products</a></li>
 <li><a href="https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-assessment-process-guide">Australia's Essential Eight</a></li>
 <li><a href="https://www.nist.gov/privacy-framework/nist-privacy-framework-and-cybersecurity-framework-nist-special-publication-800-53"><abbr title="National Institute of Standards and Technology">NIST</abbr> 800-53</a></li>
 <li><a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-cmmc"><abbr title="Department of Defense">DoD</abbr>'s CMMC (Cybersecurity Maturity Model Certification)</a></li>
 <li><a href="https://www.iso.org/standard/27001">ISO 27001</a></li>
 <li><a href="https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=operating-systems"><abbr title="Department of Defense">DoD</abbr> Cyber Stigs (Security Technical Implementation Guides)</a></li>
-<li><a href="https://hitrustalliance.net/content/uploads/HITRUST_HIPAA-Guide.pdf"><abbr title="Health Insurance Portability and Accountability Act">HIPPA</abbr> HITRUST</a></li>
 <li><a href="https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final"><abbr title="National Institute of Standards and Technology">NIST</abbr> SP 800-171 Rev. 2 - Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations</a></li>
 <li><a href="https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-success-criteria#clean-source-principle">Clean source principle</a></li>
 <li><a href="https://learn.microsoft.com/en-us/windows/release-health/windows-message-center">Windows Message Center</a></li>
@@ -3236,11 +3264,11 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <a href="https://steamcommunity.com/id/HotCakeX"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/steam.svg" alt="Steam profile and icon"></a>
 <a href="https://www.twitch.tv/hot_cakex"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/twitch.svg" alt="Twitch profile and icon"></a>
 <a href="https://hotcakex.github.io/"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/website-96.png" alt="Website and icon"></a>
-<a href="https://twitter.com/CyberCakeX"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/witter.svg" alt="Twitter profile and icon"></a>
+<a href="https://x.com/CyberCakeX"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/witter.svg" alt="X profile and icon"></a>
 <a href="https://www.xbox.com/en-US/play/user/HottCakeX"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/xbox.svg" alt="Xbox profile and icon"></a>
 <a href="https://www.youtube.com/@hotcakex"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/youtube.svg" alt="YouTube profile and icon"></a>
 <a href="https://www.reddit.com/user/HotCakeXXXXXXXXXXXXX"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/reddit.svg" alt="Reddit profile and icon"></a>
-<a href="https://socialclub.rockstargames.com/member/----HotCakeX----/"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/rockstar-social-club.svg" alt="Rockstar Social Club profile and icon"></a>
+<a href="https://socialclub.rockstargames.com/member/----HotCakeX----"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/rockstar-social-club.svg" alt="Rockstar Social Club profile and icon"></a>
 <a href="https://club.ubisoft.com/en-US/profile/HotCakeX"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/uplay.svg" alt="Uplay profile and icon"></a>
 <a href="https://techcommunity.microsoft.com/t5/user/viewprofilepage/user-id/310193"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/microsoft.png" alt="Microsoft Tech Community profile and icon"></a>
 <a href="mailto:spynetgirl@outlook.com"><img width="30" height="30" src="https://raw.githubusercontent.com/HotCakeX/HotCakeX/main/Private/Images/Socials/outlook.svg" alt="OutLook Email address and icon"></a>
@@ -3276,7 +3304,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-14T10:46:00+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-11-04T11:12:07+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-11-04</span>
   </span>
 
     
@@ -3618,7 +3646,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
     <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.expand", "navigation.footer", "content.code.annotate", "content.code.copy", "search.highlight", "search.suggest", "search.share", "content.tooltips"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="js/timeago.min.js"></script>
       
