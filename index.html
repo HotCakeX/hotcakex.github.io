@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
     
     
       
@@ -889,6 +889,15 @@ or on
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#donations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Donations
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1418,6 +1427,15 @@ or on
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#donations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Donations
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1448,7 +1466,7 @@ Harden Windows Safely, Securely, Only With Official Microsoft Methods
 </h2>
 
 <div align="center">
-<a href="https://www.powershellgallery.com/packages/Harden-Windows-Security-Module"><img src="https://img.shields.io/powershellgallery/v/Harden-Windows-Security-Module?include_prereleases&logo=Github&logoColor=rgb(76%2C%2082%2C%20112)&label=Harden%20Windows%20Security%20Module&labelColor=rgb(233%2C255%2C125)&color=rgb(246%2C%2082%2C%20160)" alt="PowerShell Gallery Version (including pre-releases)"></a> <a href="https://www.powershellgallery.com/packages/WDACConfig"><img src="https://img.shields.io/powershellgallery/v/WDACConfig?include_prereleases&logo=Github&logoColor=rgb(76%2C%2082%2C%20112)&label=WDACConfig%20Module&labelColor=rgb(233%2C255%2C125)&color=rgb(246%2C%2082%2C%20160)" alt="PowerShell Gallery Version (including pre-releases)"></a>
+<a href="https://www.powershellgallery.com/packages/Harden-Windows-Security-Module"><img src="https://img.shields.io/powershellgallery/v/Harden-Windows-Security-Module?include_prereleases&logo=Github&logoColor=rgb(76%2C%2082%2C%20112)&label=Harden%20Windows%20Security%20Module&labelColor=rgb(233%2C255%2C125)&color=rgb(246%2C%2082%2C%20160)" alt="PowerShell Gallery Version (including pre-releases)"></a> <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/AppControl-Manager"><img src="https://raw.githubusercontent.com/HotCakeX/.github/refs/heads/main/Pictures/SVG/AppControlManager%20Install.svg" alt="AppControl Manager Install"></a>
 </div>
 
 <h6 align="center">
@@ -1524,6 +1542,7 @@ Click/Tap here for commands
 <li><a href="https://www.youtube.com/watch?v=SzMs13n7elE"><strong>YouTube demo</strong></a></li>
 <li><a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/AppControl-Manager"><strong>Documentation</strong></a></li>
 </ul>
+<p><strong>Use the following PowerShell command as Admin</strong></p>
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">(</span><span class="nb">irm </span><span class="s1">&#39;https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/Harden-Windows-Security.ps1&#39;</span><span class="p">)+</span><span class="s1">&#39;AppControl&#39;</span><span class="p">|</span><span class="nb">iex</span>
 </span></code></pre></div>
 <p><br></p>
@@ -1849,10 +1868,10 @@ From Top to bottom in order:</p>
 <p>Smart App Control is User-Mode (and enforces Kernel-Mode) <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/appcontrol-design-guide">App Control for Business</a>, <strong>more info</strong> <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Introduction"><strong>in the Wiki</strong></a>. You can see its status in <a href="https://support.microsoft.com/en-us/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00">System Information</a> and enable it manually from Microsoft Defender app's GUI. It is very important for Windows and Windows Defender intelligence updates to be always up-to-date in order for Smart App Control to work properly as it relies on live intelligence and definition data from the cloud and other sources to make a Smart decision about programs and files it encounters.</p>
 </li>
 <li>
-<p>Smart App Control uses <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/use-appcontrol-with-intelligent-security-graph#how-does-wdac-work-with-the-isg"><abbr title="Intelligent Security Graph">ISG</abbr> (Intelligent Security Graph)</a>. The <abbr title="Intelligent Security Graph">ISG</abbr> isn't a "list" of apps. Rather, it uses the same vast security intelligence and machine learning analytics that power Microsoft Defender SmartScreen and Microsoft Defender Antivirus to help classify applications as having "known good", "known bad", or "unknown" reputation. This cloud-based AI is based on trillions of signals collected from Windows endpoints and other data sources and processed every 24 hours. As a result, the decision from the cloud can change.</p>
+<p>Smart App Control uses <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/use-appcontrol-with-intelligent-security-graph#how-does-app-control-work-with-the-isg"><abbr title="Intelligent Security Graph">ISG</abbr> (Intelligent Security Graph)</a>. The <abbr title="Intelligent Security Graph">ISG</abbr> isn't a "list" of apps. Rather, it uses the same vast security intelligence and machine learning analytics that power Microsoft Defender SmartScreen and Microsoft Defender Antivirus to help classify applications as having "known good", "known bad", or "unknown" reputation. This cloud-based AI is based on trillions of signals collected from Windows endpoints and other data sources and processed every 24 hours. As a result, the decision from the cloud can change.</p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/appcontrol#wdac-and-smart-app-control">Smart App Control</a> can block a program entirely from running or only <a href="https://support.microsoft.com/en-us/topic/smart-app-control-has-blocked-part-of-this-app-0729fff1-48bf-4b25-aa97-632fe55ccca2">some parts of it</a> in which case your app or program will continue working just fine most of the time. It's improved a lot since it was introduced, and it continues doing so. Consider turning it on after clean installing a new OS and fully updating it.</p>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/appcontrol#app-control-and-smart-app-control">Smart App Control</a> can block a program entirely from running or only <a href="https://support.microsoft.com/en-us/topic/smart-app-control-has-blocked-part-of-this-app-0729fff1-48bf-4b25-aa97-632fe55ccca2">some parts of it</a> in which case your app or program will continue working just fine most of the time. It's improved a lot since it was introduced, and it continues doing so. Consider turning it on after clean installing a new OS and fully updating it.</p>
 </li>
 <li>
 <p>Smart App Control enforces the <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/microsoft-recommended-driver-block-rules">Microsoft Recommended Driver Block rules</a> and the <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/applications-that-can-bypass-appcontrol">Microsoft Recommended Block Rules</a></p>
@@ -2722,13 +2741,13 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide#xml-for-network-protection-events">Network Protection</a></p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/event-id-explanations">MSI and Scripts for <abbr title="Windows Defender Application Control">WDAC</abbr> Auditing</a></p>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/event-id-explanations">MSI and Scripts for App Control Auditing</a></p>
 </li>
 <li>
 <p>Sudden Shut down events (due to power outage)</p>
 </li>
 <li>
-<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/event-id-explanations">Code Integrity Operational (<abbr title="Windows Defender Application Control">WDAC</abbr>)</a></p>
+<p><a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/operations/event-id-explanations">Code Integrity Operational</a></p>
 </li>
 <li>
 <p><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/incorrect-shutdown-reason-code-sel">Restarts (By user or by the System/Apps)</a></p>
@@ -2943,9 +2962,9 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p><br></p>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> <strong>T</strong>o combat the threat of more sophisticated malware, a preemptive measure is taken by creating and deploying an <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Introduction">App Control</a> policy on the system. This policy blocks the execution of executables and <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/feature-availability">other potentially harmful file types</a> in the Downloads folder.</p>
 <p>This policy defends the system from malware that can launch itself automatically after being downloaded from the Internet. The user must ensure the file's safety and explicitly transfer it to a different folder before running it.</p>
-<p>The <abbr title="Windows Defender Application Control">WDAC</abbr> policy employs a wildcard pattern to prevent any file from running in the Downloads folder. Additionally, it verifies that the system downloads folder in the user directory matches the downloads folder in the Edge browser's settings. If there is a discrepancy, a warning message is displayed on the console.</p>
+<p>The App Control policy employs a wildcard pattern to prevent any file from running in the Downloads folder. Additionally, it verifies that the system downloads folder in the user directory matches the downloads folder in the Edge browser's settings. If there is a discrepancy, a warning message is displayed on the console.</p>
 <p><br></p>
-<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Creates a custom <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Introduction"><abbr title="Windows Defender Application Control">WDAC</abbr></a> policy that blocks the execution of the following executables:</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Creates a custom <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/Introduction">App Control</a> policy that blocks the execution of the following executables:</p>
 <ul>
 <li>wscript.exe</li>
 <li>mshta.exe</li>
@@ -3315,6 +3334,36 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="Harden-Windows-Security is a PowerShell module"></a></p>
 <p><br></p>
+<h2 id="donations">Donations <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/refs/heads/main/Pictures/PNG%20and%20JPG/DonateIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/refs/heads/main/Pictures/PNG%20and%20JPG/DonateIcon.png" width="48" alt="DonateIcon"></a><a class="headerlink" href="#donations" title="Permanent link">&para;</a></h2>
+<p>If you would like to support my work financially, your generosity is greatly appreciated. This section is specifically for those who want to make a monetary contribution. There are other ways to support such as sharing the repository on social media, starring and so on.</p>
+<p>You can donate using the following methods:</p>
+<ul>
+<li>
+<p><strong>Donate to a Charity That Matters:</strong> Instead of donating directly to me, you could donate to a charity that is important to me, one that works to keep us safe and alive: <a href="https://www.fidf.org/">FIDF</a></p>
+</li>
+<li>
+<p><strong>Donate to me personally:</strong> <a href="https://link.trustwallet.com/send?coin=20000714&amp;address=0xF784a3D4F9A7CC5c26d69de41D7dD6480112114D">My Public Address to Receive BNB (Smart Chain - Coin)</a></p>
+</li>
+</ul>
+<details>
+<summary>
+Click/Tap here to view QR code
+
+</summary>
+
+<div align="center">
+
+<a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/refs/heads/main/Pictures/PNG%20and%20JPG/BNB%20Donation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/refs/heads/main/Pictures/PNG%20and%20JPG/BNB%20Donation.png" width="700" alt="Donation QR code for BNB"></a>
+
+</div>
+
+</details>
+
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>0xF784a3D4F9A7CC5c26d69de41D7dD6480112114D
+</span></code></pre></div>
+<p><br></p>
+<p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="Harden-Windows-Security is a PowerShell module"></a></p>
+<p><br></p>
 
 
 
@@ -3337,7 +3386,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-12-01T10:43:09+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-12-01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-12-13T16:57:02+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-12-13</span>
   </span>
 
     
