@@ -1786,7 +1786,12 @@ From Top to bottom in order:</p>
 </ul>
 <p><br></p>
 <ul>
-<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Clears Quarantined items after 1 day instead of the default behavior of keeping them indefinitely. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-microsoftdefenderantivirus#quarantine_purgeitemsafterdelay">CSP</a></li>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Clears Quarantined items after 1 day instead of the default behavior of keeping them indefinitely. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-microsoftdefenderantivirus#quarantine_purgeitemsafterdelay">CSP</a></p>
+</li>
+<li>
+<p>Quarantine involves isolating potentially harmful files in a non-executable area of your system to prevent any risk of execution. To further minimize potential threats, quarantined files are automatically removed after 1 day, rather than being retained indefinitely. This precaution helps mitigate the possibility of these files exploiting unforeseen vulnerabilities in the future, ensuring a proactive approach to system security.</p>
+</li>
 </ul>
 <p><br></p>
 <ul>
@@ -2320,10 +2325,6 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p><br></p>
 <p>Changes made by this category only affect things that use <a href="https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-">Schannel SSP</a>: that includes IIS web server, built-in inbox Windows apps and some other programs supplied by Microsoft, including Windows network communications, but not 3rd party software that use <a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations#Portability_concerns">portable stacks</a> like Java, nodejs, python or php.</p>
 <p>If you want to read more: <a href="https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/demystifying-schannel/ba-p/259233">Demystifying Schannel</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This category checks whether Battle.net client is installed on the system and if it is then includes  <code>TLS_RSA_WITH_AES_256_CBC_SHA</code> as an additional cipher suite in the policy due to <a href="https://github.com/HotCakeX/Harden-Windows-Security/issues/38">a known issue</a>. The way Battle.net client is detected is by checking the presence of <code>Battle.net.exe</code> or <code>Battle.net Launcher.exe</code> in <code>C:\Program Files (x86)\Battle.net\</code> folder.</p>
-</div>
 <p><br></p>
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> Disables <abbr title="Transport Layer Security">TLS</abbr> 1 and <abbr title="Transport Layer Security">TLS</abbr> 1.1 security protocols that only <strong>exist for backward compatibility</strong>. All modern software should and do use <code>TLS 1.2</code> and <code>TLS 1.3</code>. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-cryptography#overrideminimumenabledtlsversionclient">CSP</a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-cryptography#overrideminimumenabledtlsversionserver">CSP</a></li>
@@ -2350,6 +2351,10 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 </span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
 </span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 </span></code></pre></div>
+<p><br></p>
+<ul>
+<li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Use the <strong><em><abbr title="Transport Layer Security">TLS</abbr> for BattleNet</em></strong> sub-category if you have the BattleNet game client installed on your system. This client utilizes the <code>TLS_RSA_WITH_AES_256_CBC_SHA</code> cipher suite to establish connections with its servers. Since this cipher suite is less secure, it is excluded from the secure cipher-suites list by default. However, enabling this sub-category will include the required cipher suite, allowing you to use BattleNet without interruptions.</li>
+</ul>
 <p><br></p>
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows-server/security/tls/manage-tls">Configures</a> <abbr title="Transport Layer Security">TLS</abbr> <abbr title="Elliptic Curve Cryptography (encryption)">ECC</abbr> Curves to <a href="https://github.com/HotCakeX/Harden-Windows-Security/commit/5b5be1fcab8f7bf5d364f48459aecfc54c6eff9d#commitcomment-115982586">use the following</a> prioritized Curves order: <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-cryptography#configureellipticcurvecryptography">CSP</a></li>
@@ -2801,6 +2806,54 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <p><br></p>
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> <a href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/system-cryptography-force-strong-key-protection-for-user-keys-stored-on-the-computer">Force strong key protection</a> for user keys stored on the computer. User is prompted when the key is first used.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/discord-verify-gradient.gif" width="25" alt="Rotating green checkmark denoting Subcategory"></a> Reduced Telemetry. This sub-category applies all of the policies mentioned below. They do not have any effect on security.</p>
+</li>
+<li>
+<p>Disable Online Tips. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-settings#allowonlinetips">CSP</a></p>
+</li>
+<li>
+<p>Disable Find My Device feature. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#allowfindmydevice">CSP</a></p>
+</li>
+<li>
+<p>Disable Automatic Update of Speech Data. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-speech#allowspeechmodelupdate">CSP</a></p>
+</li>
+<li>
+<p>Turn off the advertising ID. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-privacy#disableadvertisingid">CSP</a></p>
+</li>
+<li>
+<p>Turn off cloud optimized content. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#disablecloudoptimizedcontent">CSP</a></p>
+</li>
+<li>
+<p>Do not show Windows tips. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#allowwindowstips">CSP</a></p>
+</li>
+<li>
+<p>Do not show feedback notifications. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#donotshowfeedbacknotifications">CSP</a></p>
+</li>
+<li>
+<p>Turn off Automatic Download and Update of Map Data. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-maps#enableofflinemapsautoupdate">CSP</a></p>
+</li>
+<li>
+<p>Disable Message Service Cloud Sync for cellular text messages. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-messaging#allowmessagesync">CSP</a></p>
+</li>
+<li>
+<p>Disable support for web-to-app linking with app URI handlers. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationdefaults#enableappurihandlers">CSP</a></p>
+</li>
+<li>
+<p>Disable "Continue experiences on this device" feature. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-grouppolicy#enablecdp">CSP</a></p>
+</li>
+<li>
+<p>Disable Font Providers. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#allowfontproviders">CSP</a></p>
+</li>
+<li>
+<p>Don't search the web or display web results in Search. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-search#donotusewebresults">CSP</a></p>
+</li>
+<li>
+<p>Do not allow web search. <a href="https://learn.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#21-cortana-and-search-group-policies">More Info</a></p>
+</li>
 </ul>
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
@@ -3386,7 +3439,7 @@ Click/Tap here to view QR code
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-12-21T08:56:26+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-12-21</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-01-07T14:23:58+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-01-07</span>
   </span>
 
     
