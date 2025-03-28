@@ -572,9 +572,9 @@ or on
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-the-appcontrol-manager" class="md-nav__link">
+  <a href="#install-the-appcontrol-manager-from-microsoft-store" class="md-nav__link">
     <span class="md-ellipsis">
-      Install the AppControl Manager
+      Install the AppControl Manager From Microsoft Store
     </span>
   </a>
   
@@ -1116,9 +1116,9 @@ or on
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-the-appcontrol-manager" class="md-nav__link">
+  <a href="#install-the-appcontrol-manager-from-microsoft-store" class="md-nav__link">
     <span class="md-ellipsis">
-      Install the AppControl Manager
+      Install the AppControl Manager From Microsoft Store
     </span>
   </a>
   
@@ -1550,14 +1550,21 @@ Click/Tap here for commands
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
 <p><br></p>
-<h3 id="install-the-appcontrol-manager"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/65086755cd831ab6bbb4eddf10b7b716cee12a48/Pictures/AppControl%20Manager%20Icons/Icon%20smaller.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="35" src="https://raw.githubusercontent.com/HotCakeX/.github/65086755cd831ab6bbb4eddf10b7b716cee12a48/Pictures/AppControl%20Manager%20Icons/Icon%20smaller.png" alt="GitHub logo pink SVG"></a> <a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/AppControl-Manager">Install the AppControl Manager</a><a class="headerlink" href="#install-the-appcontrol-manager" title="Permanent link">&para;</a></h3>
+<h3 id="install-the-appcontrol-manager-from-microsoft-store"><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/65086755cd831ab6bbb4eddf10b7b716cee12a48/Pictures/AppControl%20Manager%20Icons/Icon%20smaller.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img width="35" src="https://raw.githubusercontent.com/HotCakeX/.github/65086755cd831ab6bbb4eddf10b7b716cee12a48/Pictures/AppControl%20Manager%20Icons/Icon%20smaller.png" alt="GitHub logo pink SVG"></a> <a href="https://apps.microsoft.com/detail/9PNG1JDDTGP8">Install the AppControl Manager From Microsoft Store</a><a class="headerlink" href="#install-the-appcontrol-manager-from-microsoft-store" title="Permanent link">&para;</a></h3>
+<script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+<p><ms-store-badge
+    productid="9png1jddtgp8"
+    window-mode="full"
+    theme="dark"
+    size="large"
+    language="en-us"
+    animation="on">
+</ms-store-badge></p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=SzMs13n7elE"><strong>YouTube demo</strong></a></li>
 <li><a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/AppControl-Manager"><strong>Documentation</strong></a></li>
 </ul>
-<p><strong>Use the following PowerShell command as Admin</strong></p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">(</span><span class="nb">irm </span><span class="s1">&#39;https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/Harden-Windows-Security.ps1&#39;</span><span class="p">)+</span><span class="s1">&#39;AppControl&#39;</span><span class="p">|</span><span class="nb">iex</span>
-</span></code></pre></div>
+<p>AppControl Manager is available on <a href="https://apps.microsoft.com/detail/9PNG1JDDTGP8">the Microsoft Store</a>. <strong>This is the easiest and recommended way to install it.</strong></p>
 <p><br></p>
 <div align="center">
 
@@ -1850,8 +1857,8 @@ From Top to bottom in order:</p>
 <li>
 <p>Paste the following PowerShell code to retrieve the latest available online versions of the Platform, Signatures, and Engine for Microsoft Defender
   -
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">$X</span> <span class="p">=</span> <span class="nb">irm </span><span class="s2">&quot;https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info&quot;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">@{</span><span class="n">Engine</span> <span class="p">=</span> <span class="nv">$X</span><span class="p">.</span><span class="n">versions</span><span class="p">.</span><span class="n">engine</span><span class="p">;</span> <span class="n">Signatures</span> <span class="p">=</span> <span class="nv">$X</span><span class="p">.</span><span class="n">versions</span><span class="p">.</span><span class="n">signatures</span><span class="p">.</span><span class="s1">&#39;#text&#39;</span><span class="p">;</span> <span class="n">Platform</span> <span class="p">=</span> <span class="nv">$X</span><span class="p">.</span><span class="n">versions</span><span class="p">.</span><span class="n">platform</span><span class="p">}</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">-AutoSize</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">$X</span> <span class="p">=</span> <span class="nb">irm </span><span class="s2">&quot;https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info&quot;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">@{</span><span class="n">Engine</span> <span class="p">=</span> <span class="nv">$X</span><span class="p">.</span><span class="n">versions</span><span class="p">.</span><span class="n">engine</span><span class="p">;</span> <span class="n">Signatures</span> <span class="p">=</span> <span class="nv">$X</span><span class="p">.</span><span class="n">versions</span><span class="p">.</span><span class="n">signatures</span><span class="p">.</span><span class="s1">&#39;#text&#39;</span><span class="p">;</span> <span class="n">Platform</span> <span class="p">=</span> <span class="nv">$X</span><span class="p">.</span><span class="n">versions</span><span class="p">.</span><span class="n">platform</span><span class="p">}</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">-AutoSize</span>
 </span></code></pre></div></p>
 </li>
 </ul>
@@ -1916,11 +1923,11 @@ From Top to bottom in order:</p>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"></a> The root of the OneDrive folders of all the user accounts will be added to the protected folders list of Controlled Folder Access, to provide Ransomware protection for the entire OneDrive folder. <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#controlledfolderaccessprotectedfolders">CSP</a></p>
 </li>
 </ul>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c"># Add multiple programs to the exclusion list of Controlled Folder Access</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">Add-MpPreference</span> <span class="n">-ControlledFolderAccessAllowedApplications</span> <span class="s1">&#39;C:\Program Files\App\app.exe&#39;</span><span class="p">,</span><span class="s1">&#39;C:\Program Files\App2\app2.exe&#39;</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c"># Add multiple programs to the exclusion list of Controlled Folder Access</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">Add-MpPreference</span> <span class="n">-ControlledFolderAccessAllowedApplications</span> <span class="s1">&#39;C:\Program Files\App\app.exe&#39;</span><span class="p">,</span><span class="s1">&#39;C:\Program Files\App2\app2.exe&#39;</span>
 </span></code></pre></div>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c"># Get the list of all allowed apps</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">(</span><span class="nb">Get-MpPreference</span><span class="p">).</span><span class="n">ControlledFolderAccessAllowedApplications</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c"># Get the list of all allowed apps</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">(</span><span class="nb">Get-MpPreference</span><span class="p">).</span><span class="n">ControlledFolderAccessAllowedApplications</span>
 </span></code></pre></div>
 </li>
 </ul>
@@ -2354,15 +2361,15 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> Configures the <a href="https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data"><abbr title="Transport Layer Security">TLS</abbr></a> to only use the <a href="https://developers.cloudflare.com/ssl/reference/cipher-suites/recommendations/">following</a> secure <a href="https://learn.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-11">cipher suites</a> and in this <a href="https://scanigma.com/knowledge-base">exact</a> order: <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-cryptography#tlsciphersuites">CSP</a></li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>TLS_CHACHA20_POLY1305_SHA256
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>TLS_AES_256_GCM_SHA384
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>TLS_AES_128_GCM_SHA256
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>TLS_CHACHA20_POLY1305_SHA256
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>TLS_AES_256_GCM_SHA384
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>TLS_AES_128_GCM_SHA256
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 </span></code></pre></div>
 <p><br></p>
 <ul>
@@ -2372,17 +2379,17 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"></a> <a href="https://learn.microsoft.com/en-us/windows-server/security/tls/manage-tls">Configures</a> <abbr title="Transport Layer Security">TLS</abbr> <abbr title="Elliptic Curve Cryptography (encryption)">ECC</abbr> Curves to <a href="https://github.com/HotCakeX/Harden-Windows-Security/commit/5b5be1fcab8f7bf5d364f48459aecfc54c6eff9d#commitcomment-115982586">use the following</a> prioritized Curves order: <a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="15" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-cryptography#configureellipticcurvecryptography">CSP</a></li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>nistP521
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>curve25519
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>NistP384
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>NistP256
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>nistP521
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>curve25519
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>NistP384
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>NistP256
 </span></code></pre></div>
 <ul>
 <li>By default, <a href="https://learn.microsoft.com/en-us/windows/win32/secauthn/tls-elliptic-curves-in-windows-10-1607-and-later">in Windows</a>, the order is this:</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>curve25519
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>NistP256
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>NistP384
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>curve25519
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>NistP256
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>NistP384
 </span></code></pre></div>
 <p><em><a href="https://github.com/HotCakeX/Harden-Windows-Security/wiki/About-TLS,-DNS,-Encryption-and-OPSEC-concepts">Read more in this Wiki post</a></em></p>
 <p><br></p>
@@ -2990,12 +2997,12 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="25" alt="Rotating green checkmark denoting CSP"></a> <a href="https://learn.microsoft.com/en-us/deployedge/configure-edge-with-mdm">CSP</a></li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>TLS_RSA_WITH_AES_256_CBC_SHA  Reason: NO Perfect Forward Secrecy, CBC, SHA1
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>TLS_RSA_WITH_AES_128_CBC_SHA  Reason: NO Perfect Forward Secrecy, CBC, SHA1
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>TLS_RSA_WITH_AES_128_GCM_SHA256  Reason: NO Perfect Forward Secrecy
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>TLS_RSA_WITH_AES_256_GCM_SHA384  Reason: NO Perfect Forward Secrecy
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  Reason: CBC, SHA1
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  Reason: CBC, SHA1
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>TLS_RSA_WITH_AES_256_CBC_SHA  Reason: NO Perfect Forward Secrecy, CBC, SHA1
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>TLS_RSA_WITH_AES_128_CBC_SHA  Reason: NO Perfect Forward Secrecy, CBC, SHA1
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>TLS_RSA_WITH_AES_128_GCM_SHA256  Reason: NO Perfect Forward Secrecy
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>TLS_RSA_WITH_AES_256_GCM_SHA384  Reason: NO Perfect Forward Secrecy
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  Reason: CBC, SHA1
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  Reason: CBC, SHA1
 </span></code></pre></div>
 <p><br></p>
 <p>Due to security reasons, many policies cannot be used when you are signed into Edge browser using personal Microsoft account. This module does not use any of those policies. When those policies are applied, they are ignored by the browser and <code>edge://policy/</code> shows an error for them.</p>
@@ -3187,6 +3194,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Build%20AppControl%20Manager%20MSIX%20Package.yml"><img alt="Build AppControl Manager MSIX Package" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Build%20AppControl%20Manager%20MSIX%20Package.yml/badge.svg" /></a></li>
 <li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/dependabot/dependabot-updates"><img alt="Dependabot Updates" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/dependabot/dependabot-updates/badge.svg" /></a></li>
 <li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Markdown%20Link%20Validator.yml"><img alt="Markdown Link Validator" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/Markdown%20Link%20Validator.yml/badge.svg" /></a></li>
+<li><a href="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/dependency-review.yml"><img alt="Dependency review" src="https://github.com/HotCakeX/Harden-Windows-Security/actions/workflows/dependency-review.yml/badge.svg" /></a></li>
 </ul>
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line"></a></p>
@@ -3270,7 +3278,7 @@ The only way to disable <abbr title="Unified Extensible Firmware Interface">UEFI
 <ul>
 <li><a class="glightbox" href="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"></a> Use <strong>NTFS</strong> (which is the default Filesystem in Windows) or <strong>ReFS</strong> (Resilient File System, newer). In addition to all their benefits, they support <code>Mark Of The Web</code> (MOTW) or <code>zone.identifier</code>. When a file is downloaded to a device running Windows, Mark of the Web is added to the file, identifying its source as being from the internet. <a href="https://learn.microsoft.com/en-us/deployoffice/security/internet-macros-blocked#mark-of-the-web-and-trusted-documents">You can read all the information about it in here</a>. If your USB flash drive is formatted as <code>FAT32</code>, change it to <code>NTFS</code>, because <code>FAT32</code> does not keep the <code>MOTW</code> of the files. If the file you are downloading is compressed in <code>.zip</code> format, make sure you open/extract it using Windows built-in support for <code>.zip</code> files because it keeps the MOTW of the files. If the compressed file you downloaded is in other formats such as <code>.7zip</code> or <code>.rar</code>, make sure you use an archive program that supports keeping the mark of the Web of files after extraction. One of those programs is NanaZip which is a fork of 7zip, available in <a href="https://www.microsoft.com/store/productId/9N8G7TSCL18R">Microsoft Store</a> and <a href="https://github.com/M2Team/NanaZip">GitHub</a>, compared to 7zip, it has better and modern GUI, and the application is <a href="https://learn.microsoft.com/en-us/security/trusted-root/program-requirements">digitally signed</a>. After installation, open it, navigate to <code>Tools</code> at the top then select <code>Options</code>, set <code>Propagate zone.id stream</code> to <code>Yes</code>. You can use this <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.3#-stream">PowerShell command</a> to find all the info about the Zone Identifier of the files you downloaded from the Internet.</li>
 </ul>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">Get-Content</span> <span class="p">&lt;</span><span class="n">Path-To</span><span class="o">-File</span><span class="p">&gt;</span> <span class="n">-stream</span> <span class="n">zone</span><span class="p">.</span><span class="n">identifier</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">Get-Content</span> <span class="p">&lt;</span><span class="n">Path-To</span><span class="o">-File</span><span class="p">&gt;</span> <span class="n">-stream</span> <span class="n">zone</span><span class="p">.</span><span class="n">identifier</span>
 </span></code></pre></div>
 <p><br></p>
 <ul>
@@ -3447,7 +3455,7 @@ Click/Tap here to view QR code
 
 </details>
 
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>0xF784a3D4F9A7CC5c26d69de41D7dD6480112114D
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>0xF784a3D4F9A7CC5c26d69de41D7dD6480112114D
 </span></code></pre></div>
 <p><br></p>
 <p><a class="glightbox" href="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="Harden-Windows-Security is a PowerShell module"></a></p>
@@ -3474,7 +3482,7 @@ Click/Tap here to view QR code
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="February 3, 2025 09:00:17"><span class="timeago" datetime="2025-02-03T09:00:17+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="February 3, 2025 09:00:17">2025-02-03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 28, 2025 14:13:57"><span class="timeago" datetime="2025-03-28T14:13:57+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 28, 2025 14:13:57">2025-03-28</span>
   </span>
 
     
